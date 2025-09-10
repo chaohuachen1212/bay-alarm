@@ -1,0 +1,13 @@
+**/.DS_Store
+*.DS_Store
+.DS_Store
+wp-config.php
+wp-content/uploads
+.env
+wp-content/wflogs
+wp-content/uploads-webpc
+wp-content/advanced-cache.php
+wp-content/wp-rocket-config
+wp-content/cache
+wp-content/updraft
+debug.log
