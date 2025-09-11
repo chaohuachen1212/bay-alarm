@@ -1,0 +1,662 @@
+.health-partner-lander {
+	.max-container {
+    max-width: 2800px;
+  }
+
+  .pricing-promo, .header-mega-wrap {
+    max-width: 2800px;
+  }
+
+  .header-stick--tabs .container {
+    max-width: 2800px;
+  }
+
+  header[role='banner'] .header-wrap {
+    max-width: 2800px;
+  }
+
+  .new-home--logo-block {
+  	border-bottom: none;
+
+  	.eyebrows {
+  		text-align: center;
+  		display: block;
+  		margin-bottom: 1rem;
+  	}
+  }
+
+	h2 {
+		font-weight: 800;
+		font-size: 36px;
+		margin-bottom: 25px;
+		line-height: 1.2;
+	}
+}
+
+.health-partner--hero {
+	background-color: #F2EFEA;
+	overflow: hidden;
+
+	@include media('<=1100px') {
+		padding-top: 35px;
+	}
+
+	.container {
+		padding-left: 0;
+		max-width: 1800px;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		@include media('<=1100px') {
+			flex-direction: column-reverse;
+		}
+
+	}
+
+	figure {
+		width: 50%;
+		position: relative;
+
+		@include media('<=1100px') {
+			width: 100%;
+		}
+
+		img {
+			display: block;
+		}
+	}
+
+	article {
+		width: 44%;
+		padding: 15px 0;
+
+		@include media('<=1100px') {
+			width: 100%;
+			padding-left: 5%;
+			margin-bottom: 15px;
+		}
+	}
+
+	h1 {
+		font-size: 36px;
+		font-weight: 800;
+		line-height: 1.2;
+
+		@include media('<=mobile-l') {
+			br {
+				display: none;
+			}
+		}
+	}
+
+	p {
+		font-size: 20px;
+		line-height: 33px;
+	}
+
+	.btn {
+		background-color: #DB4E3B;
+		color: $white;
+		text-transform: capitalize;
+		border: 2px solid #DB4E3B;
+		border-radius: 10px;
+		padding: 18px 40px;
+		font-size: 20px;
+		display: iinline-block;
+		margin-top: 25px;
+
+		@include media('<mobile-l') {
+			width: 100%;
+		}
+
+		&:hover {
+			color: #DB4E3B !important;
+			background-color: transparent;
+
+			span {
+				color: #DB4E3B !important;
+			}
+		}
+	}
+}
+
+
+.health-partner--channels {
+	margin: 60px 0 100px;
+
+	h2 {
+		font-weight: 800;
+		font-size: 36px;
+		margin-bottom: 25px;
+	}
+
+	h3 {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.2;
+
+		@include media('<tablet-l') {
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.top-wrap {
+		text-align: center;
+		max-width: 960px;
+		margin: 0 auto;
+
+		p {
+			font-size: 20px;
+			line-height: 33px;
+		}
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 40px;
+
+		.col {
+			width: calc(100% / 3 - 15px);
+			background-color: #EDF3FA;
+			padding: 35px;
+			border-radius: 20px;
+			position: relative;
+			padding-bottom: 140px;
+			padding-top: 38px;
+
+			@include media('<tablet-l') {
+                width: 100%;
+                padding-bottom: 38px;
+                margin-bottom: 45px;
+            }
+
+			&:hover {
+
+                .btn {
+                    color: #DB4E3B;
+                    background-color: transparent;
+                }
+            }
+		}
+
+		img {
+			width: 66px;
+			height: 66px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 33px;
+		}
+
+		.btn {
+            background-color: #DB4E3B;
+            color: $white;
+            text-transform: capitalize;
+            border: 2px solid #DB4E3B;
+            border-radius: 10px;
+            padding: 18px 5%;
+            font-size: 20px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 30px;
+
+             @include media('>=tablet-l') {
+                position: absolute;
+                left: 30px;
+                width: calc(100% - 60px);
+                right: 30px;
+                bottom: 45px;
+                margin-top: 0;
+             }
+        }
+	}
+
+	.bottom-card {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		background-color: #EDF3FA;
+		padding: 40px;
+		border-radius: 20px;
+		margin-top: 25px;
+
+		@include media('<tablet-l') {
+			padding: 38px 35px;
+			margin-top: 0;
+		}
+
+		h3 {
+			margin: 0;
+			max-width: 626px;
+
+			@include media('<tablet-l') {
+				max-width: 100%;
+				margin-top: 1rem;
+			}
+		}
+
+		.copy-wrap {
+			width: calc(100% - 289px);
+			position: relative;
+			
+			@include media('>=tablet-l') {
+				padding-left: 90px;
+				padding-right: 50px;
+			}
+
+			@include media('<tablet-l') {
+				width: 100%;
+			}
+
+			img {
+				width: 66px;
+				height: 66px;
+
+				@include media('>=tablet-l') {
+					position: absolute;
+					left: 0;
+					top: -3px;
+				}
+			}
+		}
+
+		.btn {
+            background-color: #AECBF4;
+            color: $dark-blue;
+            text-transform: capitalize;
+            border: 2px solid #AECBF4;
+            border-radius: 10px;
+            padding: 18px 10px;
+            font-size: 20px;
+            width: 289px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+          	text-align: center;
+
+          	&:hover {
+          		color: #AECBF4;
+          		background-color: $dark-blue;
+          		border: 2px solid $dark-blue;
+
+          		span {
+          			color: #AECBF4;
+          		}
+          	}
+
+          	@include media('<tablet-l') {
+          		width: 100%;
+          		margin-top: 30px;
+          	}
+        }
+	}
+}
+
+.health-partner--solutions {
+	background-color: #EDF3FA;
+	padding: 120px 0;
+
+	@include media('<tablet-l') {
+		padding: 90px 0 60px;
+	}
+
+	h2 {
+		font-weight: 800;
+		font-size: 36px;
+		margin-bottom: 25px;
+	}
+
+	h3 {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.2;
+
+		@include media('<tablet-l') {
+			br {
+				display: none;
+			}
+		}
+	}
+	
+	.top-wrap {
+		text-align: center;
+		max-width: 960px;
+		margin: 0 auto;
+
+		p {
+			font-size: 20px;
+			line-height: 33px;
+		}
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 40px;
+
+		figure {
+			position: relative;
+			margin-bottom: 25px;
+
+			&:before {
+				content: '';
+				display: block;
+				height: 0;
+				padding-top: 53%;
+			}
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.card {
+			width: calc(100% / 3 - 15px);
+			padding: 35px;
+			border-radius: 20px;
+			position: relative;
+			padding-bottom: 140px;
+			padding-top: 38px;
+			background-color: $white;
+
+			@include media('<tablet-l') {
+          width: 100%;
+          padding-bottom: 38px;
+          margin-bottom: 45px;
+      }
+
+			&:hover {
+
+          .btn {
+              color: #DB4E3B;
+              background-color: transparent;
+          }
+      }
+
+      p {
+      	font-size: 18px;
+      	line-height: 33px;
+      }
+
+
+      .btn {
+          background-color: #DB4E3B;
+          color: $white;
+          text-transform: capitalize;
+          border: 2px solid #DB4E3B;
+          border-radius: 10px;
+          padding: 18px 5%;
+          font-size: 20px;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          margin-top: 30px;
+
+           @include media('>=tablet-l') {
+              position: absolute;
+              left: 30px;
+              width: calc(100% - 60px);
+              right: 30px;
+              bottom: 45px;
+              margin-top: 0;
+           }
+        }
+		}
+	}
+}
+
+
+.health-partner--glad {
+	padding: 120px 0;
+
+	@include media('<tablet-l') {
+		padding: 90px 0;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.col {
+		width: 46%;
+
+		@include media('<tablet-l') {
+			width: 100%;
+		}
+	}
+
+	img {
+		border-radius: 20px;
+		display: block;
+
+		@include media('<tablet-l') {
+			margin-bottom: 45px;
+		}
+	}
+
+	p {
+		font-size: 18px;
+    line-height: 33px;
+	}
+}
+
+
+.health-partner--form {
+	padding: 100px 0;
+	background-color: #EDF3FA;
+
+	h2 {
+		margin-top: 35px;
+	}
+
+
+	img {
+		max-width: 270px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 33px;
+
+		a {
+			font-weight: 700;
+			color: #595252;
+
+			@include media('>1400px') {
+				display: block;
+			}
+
+			@include media('<mobile-l') {
+				display: block;
+			}
+		}
+
+		
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.col {
+		width: 50%;
+
+		@include media('<tablet-l') {
+			width: 100%;
+		}
+		
+
+		&.copy {
+			text-align: center;
+			border-right: 1px solid rgba(60,58,66, 0.2);
+			padding: 0 55px;
+
+			@include media('<tablet-l') {
+				border-right: none;
+				padding: 0;
+			}
+		}
+
+		&.form-wrap {
+			padding-left: 80px;
+
+			@include media('<tablet-l') {
+				padding-left: 0;
+				margin-top: 60px;
+			}
+		}
+	}
+
+
+	form {
+	    input {
+	      color: $dark-blue;
+	      font-size: 18px;
+	      border-radius: 8px;
+	      margin-bottom: 25px;
+	      font-weight: 500;
+	      border: none;
+	      padding: 13px 20px;
+	      border: none !important;
+
+	      @include media('<=tablet') {
+	      	font-size: 14px;
+	      }
+	    }
+
+	    input:is(:-webkit-autofill, :autofill) {
+			  color: $dark-blue !important;
+			}
+
+			input:-webkit-autofill {
+					color: $dark-blue !important;
+			}
+
+			input:-webkit-autofill {
+		  -webkit-text-fill-color: $dark-blue !important;
+		}
+
+
+	    .note {
+	    	font-size: 10px;
+	    	line-height: 1.2;
+	    	margin-top: 23px;
+	    }
+
+	    .input-wrap {
+	    	margin-bottom: 0;
+
+	    	&:after {
+	    		display: none;
+	    	}
+
+	    	label {
+	    		display: none;
+	    	}
+	    }
+
+    	.input-col {
+
+        .two-col {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          input {
+            width: calc(50% - 7px);
+          }
+        }
+      }
+
+     .form-field-contain {
+     		display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .input-wrap {
+        	width: 100%;
+
+        	&:first-child {
+        		width: calc(50% - 7px);
+        	}
+
+        	&:nth-child(2) {
+        		width: calc(50% - 7px);
+        	}
+        }
+     }
+
+		::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	      color: $dark-blue !important;
+	      opacity: 1; /* Firefox */
+	      font-weight: 500;
+	    }
+
+	    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	      color: $dark-blue !important;
+	      font-weight: 500;
+	    }
+
+	    ::-ms-input-placeholder { /* Microsoft Edge */
+	      color: $dark-blue !important;
+	      font-weight: 500;
+	    }
+
+
+		button {
+        font-size: 20px;
+        font-weight: bold;
+        color: $white;
+        background-color: #DB4E3B;
+        border: 2px solid #DB4E3B;
+        text-transform: inherit;
+        text-align: center;
+        margin: 0;
+        padding: 17px 20px;
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 0;
+	      margin-bottom: 25px;
+	      border: none !important;
+
+        &:hover {
+          background-color: $white;
+          color: #DB4E3B;
+        }
+      }
+
+	  .notice, small {
+	    font-size: 10px;
+	    line-height: 1.2;
+	    color: #595252;
+	    display: block;
+	  }
+
+	}
+}

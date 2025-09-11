@@ -1,0 +1,23 @@
+// Para Hero
+// =====================================================
+.para-hero {
+  position: relative;
+  height: 370px;
+  overflow: hidden;
+
+  // Paralax on desktop
+  .hero-img-1 {
+    @include cover();
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    width: 100%;
+    height: 100%;
+
+    // @include media('>tablet-l') {
+    //   background-attachment: fixed;
+    //   background-position: top center;
+    // }
+  }
+}

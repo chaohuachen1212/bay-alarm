@@ -1,0 +1,39 @@
+.refer-a-friend {
+  @include cf();
+  padding: $mobile-gutter;
+}
+
+$raf-padding: 50px;
+
+.refer-block {
+  @include span(1/2);
+
+  &:first-child {
+    border-right: 1px solid $border-gray;
+  }
+
+  &:last-child {
+    padding-left: $raf-padding;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+
+  a {
+    color: $blue;
+  }
+}
+
+.refer-text, .refer-message {
+  padding-right: $raf-padding;
+}
+
+.refer-text {
+  padding-bottom: $raf-padding;
+  border-bottom: 1px solid $border-gray;
+}
+
+.refer-message {
+  padding-top: $raf-padding;
+}

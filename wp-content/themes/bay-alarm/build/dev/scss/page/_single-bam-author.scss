@@ -1,0 +1,32 @@
+.single-author {
+  
+  .max-container {
+    max-width: 2800px;
+  }
+
+  .pricing-promo, .header-mega-wrap {
+    max-width: 2800px;
+  }
+
+  .header-stick--tabs .container {
+    max-width: 2800px;
+  }
+
+  header[role='banner'] .header-wrap {
+    max-width: 2800px;
+  }
+
+  .team--meet-sec {
+    display: block !important;
+    border-top: none;
+
+    .td-profile-container {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .team-details-container {
+      position: relative;
+    }
+  }
+}

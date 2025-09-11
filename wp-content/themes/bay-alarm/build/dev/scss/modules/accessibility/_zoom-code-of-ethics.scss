@@ -1,0 +1,123 @@
+html.zoom-squish-400,
+html.fontsize,
+html.zoom-squish-ultra {
+
+  body.code-of-ethics.contrast {
+    *:not(a) {
+      color: inherit;
+    }
+  } // body.code-of-ethics.contrast
+
+  body.code-of-ethics {
+
+    .ethics-content {
+      margin-top: 60px;
+      h1 {
+        @include media('>tablet-l') {
+          font-size: 55px;
+        }
+      }
+      p {
+        @include media('>tablet-l') {
+          font-size: 23px;
+        }
+      }
+      .code-list {
+        > li {
+          padding-left: 16px;
+        }
+      } // .code-list
+
+      *:not(a) {
+        color: #000;
+      }
+    } // .ethics-content
+
+  } // body.code-of-ethics
+
+} // html.zoom-squish-400, html.fontsize
+
+// html.fontsize {
+//
+//   body.code-of-ethics {
+//
+//   } // body.code-of-ethics
+//
+// } // html.fontsize
+
+html.zoom-squish-400 {
+
+  body.code-of-ethics {
+
+    .ethics-content {
+      width: 90%;
+      margin: auto;
+    } // .ethics-content
+
+  } // body.code-of-ethics
+
+} // html.zoom-squish-400
+
+//===**contrast-only styles**===//
+
+// body.code-of-ethics.contrast {
+//
+// } // body.code-of-ethics.contrast
+
+html.zoom-squish-ultra {
+
+  body.code-of-ethics {
+    #main-page-body {
+      * {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+        }
+        p {
+          font-size: 10px !important;
+        }
+        a {
+          * {
+            text-decoration: underline
+          }
+          &:hover {
+            * {
+              text-decoration: none;
+            }
+          }
+        }
+      } // *
+
+      .ethics-content {
+        margin-top: 0;
+
+        .code-list {
+          iframe {
+            max-width: 100%;
+            display: block;
+            margin: auto;
+          } // iframe
+
+          > {
+            li {
+              &::before {
+                position: relative;
+                left: unset;
+                font-size: 16px;
+              }
+            }
+          }
+        } // .code-list
+
+      } // .ethics-content
+
+
+    } // main-page-body
+  } // body.code-of-ethics
+
+
+} // html.zoom-squish-ultra

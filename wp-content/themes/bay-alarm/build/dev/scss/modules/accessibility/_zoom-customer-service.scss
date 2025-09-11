@@ -1,0 +1,272 @@
+html.zoom-squish-400,
+html.fontsize,
+html.zoom-squish-ultra {
+
+  body.customer-service.contrast {
+
+    .cs-hero {
+      h1,
+      p {
+        color: inherit;
+      }
+
+    } // .cs-hero
+
+    .contact-form-wrapper.customer-service-contact {
+
+      article {
+        *:not(a) {
+          color: inherit;
+        }
+
+      } // article
+
+    } // .contact-form-wrapper.customer-service-contact
+
+    .cs-40-split {
+
+      > article {
+        *:not(a) {
+          color: inherit;
+        }
+
+      } // > article
+
+    } // .cs-40-split
+
+    .cs-50-split {
+
+      figure {
+        h2,
+        a {
+          color: inherit;
+        }
+
+        .btn-outline.white {
+          border-color: inherit;
+        }
+      } // figure
+
+    } // .cs-50-split
+
+  } // body.customer-service.contrast
+
+  body.customer-service {
+
+    .cs-hero {
+      background-image: none !important;
+      margin-top: 75px;
+      padding-bottom: 0;
+      h1,
+      p {
+        color: #000;
+      }
+
+    } // .cs-hero
+
+    .contact-form-wrapper.customer-service-contact {
+      padding-top: 0;
+
+      article {
+        text-align: center;
+        *:not(a) {
+          color: #000;
+        }
+        p {
+          font-size: 23px;
+        }
+      } // article
+
+    } // .contact-form-wrapper.customer-service-contact
+
+    .cs-40-split {
+
+      > article {
+        *:not(a) {
+          color: #000;
+        }
+
+      } // > article
+
+    } // .cs-40-split
+
+    .cs-50-split {
+
+      figure {
+        background-image: none !important;
+        border: 2px solid #4ca6bd;
+
+        h2,
+        a {
+          color: #000;
+        }
+        .btn-outline.white {
+          border-color: #000;
+        }
+      } // figure
+
+    } // .cs-50-split
+
+    .cs-about {
+      h2 {
+        font-size: 42px;
+      }
+    } // .cs-about
+
+  } // body.customer-service
+
+} // html.zoom-squish-400, html.fontsize
+
+html.fontsize {
+
+  body.customer-service {
+    .cs-hero {
+
+      h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 23px;
+      }
+
+    } // .cs-hero
+  } // body.customer-service
+
+} // html.fontsize
+
+html.zoom-squish-400 {
+
+  body.customer-service {
+
+    .cs-40-split {
+      figure {
+        display: none;
+      } // figure
+
+      article {
+        position: relative;
+        float: none;
+        margin: auto;
+        text-align: center;
+      } // article
+    } // .cs-40-split
+
+
+  } // body.customer-service
+
+} // html.zoom-squish-400
+
+//===**contrast-only styles**===//
+
+// body.customer-service.contrast {
+//
+// } // body.customer-service.contrast
+
+html.zoom-squish-ultra {
+
+  body.customer-service {
+
+    #main-page-body {
+
+      * {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+        }
+        p,
+        span,
+        ul li,
+        p *,
+        .btn-outline {
+          font-size: 10px !important;
+        }
+        a {
+          * {
+            text-decoration: underline
+          }
+          &:hover {
+            * {
+              text-decoration: none;
+            }
+          }
+        }
+        img {
+          display: none;
+        }
+        figure {
+          background-image: none !important;
+          background-color: #fff;
+        }
+      } // *
+
+    } // #main-page-body
+
+    .cs-hero,
+    .contact-form-wrapper,
+    .cs-40-split,
+    .cs-50-split,
+    .cs-about {
+      max-width: 75%;
+      margin: auto;
+    } // .cs-hero, .contact-form-wrapper, .cs-40-split, .cs-50-split, .cs-about
+
+    .cs-hero {
+
+      min-height: unset;
+      margin-top: 0;
+      padding-top: 60px;
+
+    } // .cs-hero
+
+    .contact-form-wrapper.customer-service-contact {
+
+      padding: 0;
+
+    } // .contact-form-wrapper.customer-service-contact
+
+    .cs-40-split {
+
+      figure {
+        display: none;
+      }
+
+    } // .cs-40-split
+
+    .cs-50-split {
+      height: unset;
+
+      figure {
+        height: unset;
+      }
+
+      .center-all {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+        padding: 20px 0;
+        margin: auto;
+      } // .center-all
+
+    } // .cs-50-split
+
+    .cs-about {
+
+      padding: 20px 0;
+
+      h2 {
+        margin-bottom: 15px;
+      }
+
+      li {
+        min-height: unset;
+      }
+    } // .cs-about
+
+  } // body.customer-service
+
+} // html.zoom-squish-ultra

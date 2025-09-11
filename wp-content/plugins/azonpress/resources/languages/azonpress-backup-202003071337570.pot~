@@ -1,0 +1,182 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AzonPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-15 12:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.1"
+
+#: Classes/global_functions.php:24 Classes/global_functions.php:35
+msgid "Amazon API is not valid, Please configure your api first."
+msgstr ""
+
+#: Classes/global_functions.php:136
+msgid "Sorry, You do not have access to do this action"
+msgstr ""
+
+#. Name of the plugin
+#: Classes/MediaButton.php:10 Classes/MediaButton.php:13
+#: Classes/libs/Updater/updater.php:34 Classes/libs/Updater/updater.php:36
+msgid "AzonPress"
+msgstr ""
+
+#: Classes/MediaButton.php:19 Classes/Menu.php:9 Classes/Menu.php:10
+msgid "Azonpress"
+msgstr ""
+
+#: Classes/Menu.php:33
+msgid "Dashboard"
+msgstr ""
+
+#: Classes/Menu.php:38
+msgid "Comparison Tables"
+msgstr ""
+
+#: Classes/Menu.php:43
+msgid "Product Tables"
+msgstr ""
+
+#: Classes/Menu.php:48
+msgid "Settings"
+msgstr ""
+
+#: Classes/SettingAPI.php:64
+msgid "Credential Successfully updated"
+msgstr ""
+
+#: Classes/SettingAPI.php:135
+msgid "Settings successfully updated"
+msgstr ""
+
+#: Classes/SettingAPI.php:164
+msgid "Sorry! Only administrator can make the changes of these settings"
+msgstr ""
+
+#: Classes/SettingAPI.php:175
+msgid "Settings has been updated successfully"
+msgstr ""
+
+#: Classes/Products/Amazon.php:15
+msgid "Brazil"
+msgstr ""
+
+#: Classes/Products/Amazon.php:27
+msgid "Canada"
+msgstr ""
+
+#: Classes/Products/Amazon.php:39
+msgid "China"
+msgstr ""
+
+#: Classes/Products/Amazon.php:51
+msgid "Germany"
+msgstr ""
+
+#: Classes/Products/Amazon.php:63
+msgid "Spain"
+msgstr ""
+
+#: Classes/Products/Amazon.php:75
+msgid "France"
+msgstr ""
+
+#: Classes/Products/Amazon.php:87
+msgid "India"
+msgstr ""
+
+#: Classes/Products/Amazon.php:99
+msgid "Italy"
+msgstr ""
+
+#: Classes/Products/Amazon.php:111
+msgid "Japan"
+msgstr ""
+
+#: Classes/Products/Amazon.php:123
+msgid "Mexico"
+msgstr ""
+
+#: Classes/Products/Amazon.php:135
+msgid "UK"
+msgstr ""
+
+#: Classes/Products/Amazon.php:147
+msgid "US"
+msgstr ""
+
+#: Classes/Products/Amazon.php:283 Classes/Products/Amazon.php:284
+#: resources/views/product_parts/add_to_cart.php:8
+#: resources/views/product_parts/button.php:8
+msgid "Buy On Amazon"
+msgstr ""
+
+#: Classes/Products/ProductTransformerTrait.php:45
+msgid "Buy on amazon"
+msgstr ""
+
+#: Classes/Products/ProductTransformerTrait.php:55
+msgid "Add To Cart"
+msgstr ""
+
+#: Classes/Shortcode/ProductTable.php:41 Classes/Shortcode/TableList.php:173
+msgid "Table does not exists"
+msgstr ""
+
+#: Classes/Shortcode/TableList.php:23
+msgid "Please provide Table title so you can identify later"
+msgstr ""
+
+#: Classes/Shortcode/TableList.php:58
+msgid "Table successfully added"
+msgstr ""
+
+#: Classes/Shortcode/TableList.php:109
+msgid "Successfully updated the table"
+msgstr ""
+
+#: Classes/Shortcode/TableList.php:209
+msgid "Successfully deleted the table"
+msgstr ""
+
+#: Classes/Shortcode/TableList.php:224
+msgid "CSS successfully updated"
+msgstr ""
+
+#: resources/views/customSearchBox.php:15
+msgid "Search"
+msgstr ""
+
+#: Classes/libs/Updater/AzonPressUpdateChecker.php:93
+#: Classes/libs/Updater/AzonPressUpdateChecker.php:102
+#, php-format
+msgid "The %s license needs to be activated. %sActivate Now%s"
+msgstr ""
+
+#: resources/views/product_parts/price.php:25
+msgid "from"
+msgstr ""
+
+#. Description of the plugin
+msgid "Azonpress WordPress Plugin"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wpmanageninja.com/products/azonpress"
+msgstr ""
+
+#. Author of the plugin
+msgid "WPManageNinja"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpmanageninja.com"
+msgstr ""

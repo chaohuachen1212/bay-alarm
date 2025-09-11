@@ -1,0 +1,45 @@
+.home-care--team {
+  padding: 40px 6%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+
+  .l-col, .r-col {
+    width: calc(50% - 20px);
+
+    @include media('<=tablet') {
+      width: 100%;
+    }
+  }
+
+  .r-col {
+    @include media('<=tablet') {
+      margin-top: 20px;
+    }
+  }
+
+  .btn-wrap {
+    margin-top: 20px;
+
+    a {
+      color: #4ca6bd;
+
+      &:hover {
+        color: #33788a;
+
+        svg {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    svg {
+      width: 10px;
+      height: 10px;
+      margin-left: 5px;
+      transition: 0.35s;
+    }
+  }
+}

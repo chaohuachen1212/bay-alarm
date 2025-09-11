@@ -1,0 +1,112 @@
+section.prod-wall-buttons {
+  position: relative;
+  padding-right: 12%;
+
+  @include media('<desktop') {
+    padding-right: $mobile-gutter;
+  }
+
+  @include media('>=tablet-m2') {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 860px;
+  }
+
+  @include media('<tablet-m2') {
+    padding-right: 0;
+  }
+
+  figure.wall-buttons-bg {
+    @include cover();
+
+    @include media('<desktop') {
+      background-position: -200px center;
+    }
+
+    @include media('>=tablet-m2') {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    @include media('<tablet-m2') {
+      @include ratio-box-old(16/9);
+      background-position: center center;
+    }
+  }
+
+  article {
+    position: relative;
+    background: $white;
+    padding: 25px;
+
+    @include media('>=tablet-m2') {
+      max-width: 620px;
+      box-shadow: 0 10px 45px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    @include media('<tablet-m2') {
+      padding: 35px $mobile-gutter;
+    }
+  }
+
+  h3 {
+    @include fluid-type(27px, 33px, 420px, 1024px);
+    color: #242020;
+    font-weight: $text-normal;
+  }
+
+  h4 {
+    color: #84848c;
+  }
+
+  p {
+    color: #4e5862;
+    font-size: rem(17px);
+    margin-bottom: 30px;
+
+    @include media('>=tablet-m2') {
+      padding-right: 110px;
+    }
+  }
+}
+
+div.wall-button-features {
+  padding-top: 5px;
+
+  ul {
+    @include reset-list();
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  figure {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #4CA6BD;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+
+  span {
+    padding-left: 20px;
+    font-size: 1.25rem;
+    color: #242020;
+    font-weight: 700;
+
+    @include media('<tablet-m2') {
+      font-size: rem(18px);
+    }
+  }
+}

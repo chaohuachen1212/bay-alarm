@@ -1,0 +1,900 @@
+//----------------------
+// B2B Template Styles
+//----------------------
+
+// Generic Styles
+body {
+    &.b2b {
+        letter-spacing: 0;
+        .slick-track {
+            padding: 15px 0;
+        }
+        
+        .slick-dots {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            li {
+                @include media("<=mobile-l") {
+                    margin: 0;
+                }
+                &.slick-active {
+                    button {
+                        &:before {
+                            color: #3C9EB4;
+                        }
+                    }
+                }
+        
+                button {
+
+                    &:before {
+                        font-size: 15px;
+                        color: #c4c4c4;
+                        @include media("<=mobile-l") {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.b2b-section {
+    padding: 3.25rem 0;
+    @include media("<=tablet-l") {
+        padding: 5rem 0.75rem;
+    }
+    &.border-top {
+        border-top: 1px solid #d5d5d5;
+    }
+    &.border-bottom {
+        border-bottom: 1px solid #d5d5d5;
+    }
+    header {
+        margin-bottom: 2.75rem;
+        @include media("<=mobile-l") {
+            margin-bottom: 1.25rem;
+        }
+    }
+    .btn {
+        min-width: 200px;
+        height: 44px;
+        padding: 12px 0;
+        line-height: 100%;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: $white;
+        color: #61A3B9;
+        border: 2px solid #61A3B9;
+        letter-spacing: 0.03rem;
+        display: block;
+        &:hover {
+            background-color: #61A3B9;
+            color: $white;
+            border: 2px solid #61A3B9;
+        }
+        @include media("<=mobile-l") {
+            width: 160px;
+            height: 40px;
+            padding: 10px 0;
+        }
+    }
+}
+.b2b-section-title {
+    font-size: 36px;
+    line-height: 110%;
+    font-weight: 700;
+    text-align: center;
+    @include media("<=mobile-l") {
+        padding: 0 1rem;
+        font-size: 24px;
+        line-height: 130%;
+    }
+}
+.b2b-section-sub {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+    @include media("<=mobile-l") {
+        padding: 0 1rem;
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+
+// Hero
+.b2b-hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 8rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "... ... ... ... ... ... ... box box box box box";
+
+    @include media("<=tablet-l") {
+        grid-template-areas: "... box box box box box box box box box box ...";
+        text-align: center;
+        padding: 5rem 0;
+    }
+
+    @include media("<=tablet") {
+        background-position: 31% 50%;
+        padding: 0;
+        grid-template-areas: "box box box box box box box box box box box box";
+    }
+    
+
+    .hero-info {
+        grid-area: box;
+        padding-right: 0.75rem;
+        @include media("<=tablet") {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 5rem 0.50rem;
+        }
+        
+        h1 {
+            color: $white;
+            font-weight: 400;
+            font-size: 55px;
+            line-height: 60px;
+            white-space: normal;
+            @include media("<=tablet") {
+                letter-spacing: 0;
+                font-size: 34px;
+                line-height: 130%;
+                font-weight: 700;
+
+            }
+        }
+        h2 {
+            font-size: 20px;
+            line-height: 28px;
+            color: $white;
+            max-width: 75%;
+            @include media("<=tablet") {
+                font-size: 18px;
+                max-width: 100%;
+            }
+        }
+        .btn {
+            background-color: $white;
+            color: #61A3B9;
+            border: none;
+            padding: 1rem 2rem;
+            text-transform: inherit;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 1.75rem;
+            &:hover {
+                background-color: #61A3B9;
+                color: $white;
+            }
+            @include media("<=tablet") {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+// Partners
+.our-partners {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 1.75rem;
+
+    @include media("<=tablet-l") {
+        padding: 3rem 0 5rem 0;
+    }
+   
+    .partner-logos {
+        margin: 0 auto;
+
+         .slick-track {
+            padding: 0;
+        }
+        
+        figure {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            padding: 0;
+            text-align: center;
+            margin: 0 auto;
+            min-height: 175px;
+
+            @include media("<=mobile-l") {
+                max-height: 200px;
+            }
+
+            @include media("<=mobile-l") {
+                padding: 0;
+            }
+            
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 125px;
+                height: auto;
+
+                @include media("<=mobile-l") {
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+}
+
+// Opportunities
+.our-opportunities {
+    background-color: #EDF5F7;
+
+    @include media("<=mobile-l") {
+        padding-bottom: 2rem;
+    }
+
+    .b2b-opportunities {
+        display: grid;
+        //grid-template-columns: repeat(3, 1fr);
+        //gap: 2rem;
+        grid-template-columns: repeat(3, 340px);
+        gap: 30px;
+        justify-content: center;
+        padding: 1.75rem 0;
+
+        @include media("<=tablet-l") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media("<=mobile-l") {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 0.25rem;
+            gap: 1.25rem;
+        }
+
+        .b2b-opportunity {
+            background-color: $white;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 1.75rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+
+            @include media("<=desktop") {
+                padding: 2rem;
+            }
+
+            @include media("<=mobile-l") {
+                padding: 1.75rem 1rem;
+            }
+
+            h3 {
+                font-weight: 700;
+                color: #333;
+                font-size: 18px;
+                margin-bottom: 0.75rem;
+                @include media("<=mobile-l") {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            p {
+                color: #333;
+                margin-bottom: 1.75rem;
+                font-size: 16px;
+                line-height: 22px;
+                @include media("<=mobile-l") {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .btn {
+                margin-top: auto;  
+            }
+
+            @include media("<=mobile") {
+                padding: 1.25rem;
+            }
+        }
+    }
+}
+
+// Contact Us
+.b2b-contact-us {
+    background-color: #61A3B9;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    @include media("<=mobile-l") {
+        padding: 5rem 2rem;
+    }
+
+
+    h2 {
+        color: $white;
+        font-size: 32px;
+        line-height: 50px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @include media("<=mobile-l") {
+            font-size: 24px;
+            line-height: 130%;
+        }
+    }
+
+    .btn {
+        background-color: #61A3B9;
+        border: 2px solid $white;
+        color: $white;
+        &:hover {
+            background-color: $white;
+            color: #61A3B9;
+        }
+    }
+}
+
+// Our Products
+.our-b2b-products {
+    background-color: #EDF5F7;
+
+    .b2b-section-sub {
+        margin-bottom: 60px;
+    }
+
+    .b2b-products-container {
+        display: grid;
+
+        //grid-template-columns: repeat(3, 1fr);
+        //gap: 2rem;
+        grid-template-columns: repeat(3, 340px);
+        gap: 30px;
+        justify-content: center;
+        padding: 0 0 1.75rem 0;
+
+        @include media("<=desktop") {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 1.75rem 0;
+        }
+        @include media("<=tablet-l") {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0;
+        }
+
+        .b2b-product-card {
+            background-color: $white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 2rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+
+            @include media("<=tablet-l") {
+                border-radius: 0;
+                padding: 0 2rem 3.75rem 2rem;
+                box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.1);
+                &:first-of-type {
+                    border-radius: 10px 10px 0 0;
+                    padding-top: 3.75rem;
+                    
+                }
+                &:last-of-type {
+                    border-radius: 0 0 10px 10px;
+                }
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 400;
+                color: #333;
+                margin: 0 0 1.25rem 0;
+            }
+            p {
+                color: #595252;
+                font-size: 16px;
+                line-height: 140%;
+                margin-bottom: 3rem;
+            }
+            .btn {
+                margin-top: auto;
+            }
+        }
+    }
+}
+
+// Why Lifestation
+.b2b-why-lifestation {
+
+    @include media("<=mobile-l") {
+        padding: 3.75rem 0;
+    }
+
+    .b2b-section-sub {
+        @include media("<=mobile-l") {
+            padding: 0 2rem 1rem 2rem;
+        }
+    }
+
+    .why-lifestation-container {
+
+        .why-lifestation-card {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas: "... fig fig fig fig fig inf inf inf inf ... ...";
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 0;
+
+            @include media("<=tablet") {
+                grid-template-areas: "... fig fig fig fig ... inf inf inf inf inf ...";
+                
+            }
+
+            @include media("<=mobile-l") {
+                grid-template-areas:
+                    "fig fig fig fig fig fig fig fig fig fig fig fig"
+                    "... inf inf inf inf inf inf inf inf inf inf ...";
+                padding: 0.75rem 0;
+                .why-lifestation-info {
+                    text-align: center;
+                }
+                figure {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                
+            }
+
+            &:nth-of-type(even) {
+                grid-template-areas: "... ... inf inf inf inf fig fig fig fig fig ...";
+                .why-lifestation-info {
+                    text-align: right;
+                }
+                @include media("<=tablet") {
+                    grid-template-areas: "... inf inf inf inf inf ... fig fig fig fig ...";
+                }
+
+                @include media("<=mobile-l") {
+                    grid-template-areas:
+                        "fig fig fig fig fig fig fig fig fig fig fig fig"
+                        "... inf inf inf inf inf inf inf inf inf inf ...";
+                    .why-lifestation-info {
+                        text-align: center;
+                    }
+
+                }
+            }
+
+            figure {
+                grid-area: fig;
+                text-align: center;
+                padding: 0 5rem;
+
+                @include media("<=tablet-l") {
+                    padding: 0 1.75rem;
+                }
+
+                @include media("<=tablet") {
+                    padding: 0;
+                }
+                
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    @include media("<=tablet") {
+                        margin: 0 auto 2.25rem auto;
+                    }
+                }
+            }
+            .why-lifestation-info {
+                grid-area: inf;
+                max-width: 400px;
+                h3 {
+                    font-weight: 100;
+                    font-size: 28px;
+                    line-height: 35px;
+                    color: #242020;
+                    margin: 0 0 0.50rem 0;
+                    @include media("<=tablet") {
+                        font-size: 22px;
+                        line-height: 28px;
+                        margin-bottom: 7px;
+                    }
+                }
+                h4 {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
+                    letter-spacing: -0.01em;
+                    color: #3C9EB4;
+                    margin: 0 0 1.25rem 0;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0.005em;
+                    color: #4E5862;
+                    margin-top: 1.75rem;
+                    @include media("<=tablet") {
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// Our Innovations
+.b2b-our-innovations {
+    background-color: #EDF5F7;
+    padding-bottom: 0;
+
+    header {
+        margin-bottom: 75px;
+    }
+
+    .our-innovations-container {
+        
+        padding-bottom: 75px;
+        margin: 0 auto;
+        max-width: 1000px;
+        @include media("<=tablet-l") {
+            padding: 1.75rem 3rem;
+        }
+        @include media("<=mobile-l") {
+            padding: 0.50rem;
+        }
+
+        .b2b-innovation {
+            background-color: $white;
+            box-shadow: 0px 3.52059px 8.80146px rgba(0, 0, 0, 0.08);
+            padding: 1.75rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            margin: 0 1rem;
+            width: 100%;
+            max-width: 287px;
+            min-height: 377px;
+
+            @include media("<=tablet-l") {
+                margin: 0 1.75rem;
+                max-width: 100%;
+                min-height: auto;
+            }
+            @include media("<=mobile-l") {
+                margin: 0;
+            }
+            svg {
+                margin-bottom: 1.5rem;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+                color: #61A3B9;
+                margin: 0.75rem 0;
+            }
+            p {
+                font-size: 16px;
+                line-height: 140%;
+                color: #595252;
+            }
+        }
+
+        .slick-dots {
+            @include media("<=tablet") {
+                margin-top: -10px;
+                margin-bottom: 3rem;
+            }
+            
+        }
+    }
+}
+
+// Leading
+.b2b-leading-where-it-matters {
+    background-color: #EDF5F7;
+    padding: 0 5rem 5rem 5rem;
+
+    @include media("<=mobile-l") {
+        background-color: $white;
+        padding: 3rem 1rem 0 1rem;
+    }
+    
+    header {
+        border-top: 1px solid #d5d5d5;
+        padding-top: 5rem;
+        margin-bottom: 90px;
+
+        @include media("<=mobile-l") {
+            padding-top: 0rem;
+            border-top: none;
+        }
+    }
+
+    .leading-where-it-matters-container {
+        padding: 0 0 1.5rem 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 860px;
+        margin: 0 auto;
+        @include media("<=mobile-l") {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 3rem;
+        }
+
+        .b2b-leading {
+            h3 {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+                color: #61A3B9;
+
+                @include media("<=mobile-l") {
+                    color: #595252;
+                }
+            }
+        }
+    }
+}
+
+// Stats
+.b2b-stats {
+
+    @include media("<=mobile-l") {
+        padding: 3rem 0;
+    }
+    header {
+        @include media("<=mobile-l") {
+            padding: 0 2.25rem;
+        }
+    }
+    
+}
+.b2b-stats-container {
+    padding: 0 0 1.75rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    max-width: 1140px;
+    margin: 0 auto;
+    @include media("<=desktop") {
+        gap: 3rem;
+    }
+    @include media("<=mobile-l") {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.75rem;
+        padding-bottom: 0;
+    }
+
+    .b2b-stat {
+        padding: 0 0.25rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include media("<=mobile-l") {
+            padding: 0 2rem;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 44px;
+            line-height: 56px;
+            color: #61A3B9;
+            letter-spacing: 0.05rem;
+            &:after {
+                content: '%';
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0.005rem;
+            color: #595252;
+        }
+    }
+}
+
+// Contact Form
+.b2b-interest-form {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: ".. .. fc fc fc .. if if if if .. ..";
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #d5d5d5;
+
+    @include media("<=tablet") {
+        grid-template-areas:
+            "fc fc fc fc fc fc fc fc fc fc fc fc"
+            "if if if if if if if if if if if if";
+            background-color: #61A3B9;
+            border-top: none;
+            //padding: 5rem 0.50rem;
+    }
+
+    .b2b-interest-form-content {
+        grid-area: fc;
+        text-align: center;
+
+        @include media("<=tablet") {
+            margin-bottom: 1.75rem;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 46px;
+            margin-bottom: 1.75rem;
+
+            @include media("<=tablet") {
+                color: $white;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 130%;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 23px;
+            color: #595252;
+
+             @include media("<=tablet") {
+                 color: $white;
+                 a {
+                     color: $white;
+                     &:hover {
+                         color: #333;
+                     }
+                 }
+             }
+
+            a {
+                font-weight: 700;
+                color: #61A3B9;
+                &:hover {
+                    color: lighten(#61A3B9, 10%);
+                }
+                @include media("<=tablet") {
+                    color: $white;
+                    &:hover {
+                        color: $white;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .b2b-interest-form-container {
+        grid-area: if;
+    }
+
+    .form-field-contain {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            ".. fn fn fn fn fn ln ln ln ln ln .."
+            ".. em em em em em em em em em em .."
+            ".. ph ph ph ph ph ph ph ph ph ph .."
+            ".. co co co co co co co co co co .."
+            ".. wb wb wb wb wb wb wb wb wb wb .."
+            ".. .. .. .. bt bt bt bt .. .. .. .."
+            "sm sm sm sm sm sm sm sm sm sm sm sm";
+        align-items: center;
+        justify-content: center;
+        background-color: #61A3B9;
+        padding: 3rem 0;
+
+        @include media("<=tablet") {
+            padding: 1rem 0;
+            grid-template-areas:
+                "fn fn fn fn fn fn ln ln ln ln ln ln"
+                "em em em em em em em em em em em em"
+                "ph ph ph ph ph ph ph ph ph ph ph ph"
+                "co co co co co co co co co co co co"
+                "wb wb wb wb wb wb wb wb wb wb wb wb"
+                "bt bt bt bt bt bt bt bt bt bt bt bt"
+                "sm sm sm sm sm sm sm sm sm sm sm sm";
+        }
+
+        .input-wrap {
+            padding: 0.50rem 0;
+        }
+
+        .b2b-first-name {
+            grid-area: fn;
+            margin-right: 0.50rem;
+        }
+        .b2b-last-name {
+            grid-area: ln;
+        }
+        .b2b-email {
+            grid-area: em;
+        }
+        .b2b-phone {
+            grid-area: ph;
+        }
+        .b2b-company {
+            grid-area: co;
+        }
+        .b2b-website {
+            grid-area: wb;
+        }
+        button {
+            grid-area: bt;
+            margin: 0 auto;
+        }
+        small {
+            grid-area: sm;
+            color: $white;
+            font-size: 8px;
+            line-height: 11.2px;
+            margin-top: 1.25rem;
+            padding: 0 3rem;
+
+            @include media("<=mobile-l") {
+                padding: 0;
+            }
+        }
+
+        // Form field styles
+        input {
+            &[type="text"], &[type="tel"], &[type="email"] {
+                
+                border: none;
+                &::placeholder {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #61A3B9;
+                }
+            }
+        }
+        .btn {
+            margin-top: 1.75rem;
+            color: $white;
+            background-color: #333;
+            text-transform: inherit;
+            font-size: 17px;
+            font-weight: 400;;
+        }
+    }
+}

@@ -1,0 +1,635 @@
+body.on-the-road {
+  p,
+  .app-features-sec .list-tiem p {
+    font-size: rem(18px);
+  }
+}
+
+section.on-road-hero {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 80px $mobile-gutter 45px;
+
+  @include media('>=tablet') {
+    min-height: 450px;
+  }
+
+  @include media('<tablet') {
+    padding: 90px $mobile-gutter 35px;
+  }
+
+  &.text-right {
+    justify-content: flex-end;
+    text-align: right;
+
+    div.on-the-road-video-block {
+      @include media('>=tablet') {
+        right: 15%;
+      }
+    }
+  }
+
+  // div.on-the-road-video-block > div::before {
+  //   padding-top: 0;
+  // }
+
+  div.slick-slide {
+    position: relative;
+    @include ratio-box-old(16/9);
+  }
+
+  div.hero-text-wrap {
+    position: relative;
+    width: 100%;
+  }
+
+  h1 {
+    @include fluid-type(32px, 42px, 420px, 1024px);
+    font-weight: $text-normal;
+  }
+
+  p {
+    max-width: 500px;
+    margin-bottom: 40px;
+
+    strong {
+      color: inherit;
+      font-weight: bold;
+    }
+  }
+
+  h1, p {
+    color: $white;
+  }
+
+  div.on-the-road-video-block {
+    margin-right: 0;
+    position: relative;
+    width: 115%;
+    max-width: 600px;
+
+    @include media('<tablet') {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+section.on-the-road-intro {
+  padding-right: 0;
+  padding-left: $mobile-gutter;
+}
+
+section.on-the-road-awards {
+  margin: $mobile-gutter $mobile-gutter 0;
+  padding: 35px $mobile-gutter 65px;
+  background: #EFEFEF;
+
+  div.awards-top {
+    text-align: center;
+
+    img {
+      width: 275px;
+
+      @include media('<tablet') {
+        width: 175px;
+      }
+    }
+  }
+
+  h2, h5, p {
+    color: #4E5862;
+  }
+
+  h2 {
+    @include fluid-type(32px, 38px, 420px, 1024px);
+  }
+
+  h5 {
+    @include fluid-type(21px, 23px, 420px, 1024px);
+  }
+
+  p {
+    @include fluid-type(18px, 22px, 420px, 1024px);
+  }
+
+  div.awards-quote {
+    position: relative;
+    padding: 35px $mobile-gutter 0;
+    max-width: 1128px;
+    margin: 0 auto;
+
+    @include media('<tablet') {
+      padding-bottom: 0;
+    }
+
+    &::before {
+      content: '“';
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include fluid-type(50px, 90px, 420px, 1024px);
+      color: #4E5862;
+
+      @include media('<tablet') {
+        top: 10px;
+        left: -10px;
+      }
+    }
+
+    &::after {
+      content: '”';
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      @include fluid-type(50px, 90px, 420px, 1024px);
+      color: #4E5862;
+
+      @include media('<tablet') {
+        bottom: 10px;
+        right: -10px;
+      }
+    }
+  }
+
+  p.awards-quote-copy {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  p.awards-quote-author {
+    margin-top: 10px;
+    padding-right: 15%;
+    text-align: right;
+  }
+}
+
+section.on-the-road-awards-row {
+  padding: 0 $mobile-gutter;
+
+  p {
+    padding-left: 25px;
+    @include fluid-type(18px, 22px, 420px, 1024px);
+
+    @include media('<tablet') {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+}
+
+div.awards-logo-container {
+  max-width: 1000px;
+  margin: 20px auto 0;
+  padding-bottom: 65px;
+  border-bottom: 1px solid rgba(#4D4D4D, 0.1);
+  overflow: hidden;
+
+  @include media('<tablet') {
+    padding-bottom: 35px;
+  }
+}
+
+div.awards-logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 25px;
+  margin-right: -50px;
+
+  div {
+    width: 25%;
+    margin-bottom: 25px;
+    padding-right: 50px;
+    text-align: center;
+
+    @include media('<tablet-m2') {
+      width: 50%;
+    }
+
+    @include media('<tablet') {
+      width: 100%;
+    }
+
+    figure {
+      max-width: 225px;
+      margin: 0 auto;
+      height: 60px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    img {
+      max-width: 250px;
+      height: 60px;
+      object-fit: contain;
+    }
+  }
+}
+
+section.splitsecnd-features {
+  padding: 75px $mobile-gutter;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+
+  @include media('<tablet-l') {
+    padding: 35px $mobile-gutter;
+  }
+
+  h2 {
+    @include fluid-type(32px, 38px, 420px, 1024px);
+    color: $blue;
+  }
+
+  p {
+    max-width: 925px;
+    margin: 0 auto;
+    font-size: rem(18px);
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  a.btn {
+    margin: 10px 0 0 18px;
+  }
+}
+
+div.features-intro-copy {
+  text-align: center;
+
+  a {
+    @extend .btn;
+    @extend .blue;
+    @extend .outline;
+    margin-top: 25px;
+  }
+}
+
+div.splitsecnd-detail {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 65px auto 0;
+
+  @include media('<tablet-l') {
+    flex-direction: column;
+    margin-top: 35px;
+  }
+
+  article {
+    align-self: center;
+  }
+
+  li {
+    font-size: rem(18px);
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+section.splitsecnd-app {
+  padding-top: 25px;
+  max-width: none;
+
+  &.app-features-sec {
+    padding-top: 75px;
+    max-width: 740px;
+    margin: 0 auto;
+
+    .features-intro-copy {
+      padding-bottom: 35px;
+
+      h2 {
+        @include fluid-type(32px, 38px, 420px, 1024px);
+        color: $blue;
+      }
+    }
+
+    .list-tiem {
+      width: 100%;
+
+      .icon {
+        @include media('>=tablet') {
+          margin: 0 0 0 auto;
+        }
+
+        &::before {
+          left: auto;
+          right: -30px;
+          transform-origin: center left;
+        }
+      }
+    }
+
+    .bottom-img {
+      position: relative;
+      width: 115%;
+      margin-top: 25px;
+      right: 46px;
+      float: none;
+      max-width: none;
+
+      @include media('<tablet') {
+        display: block;
+        width: 100%;
+        right: 0;
+      }
+    }
+
+    .mobile-col {
+      width: 48%;
+      float: right;
+      left: -2%;
+
+      &.is-fixed {
+        width: 355px;
+        left: 50%;
+        top: 91px;
+      }
+    }
+
+    .content-col {
+      width: 48%;
+      float: left;
+
+      @include media('>=tablet') {
+        text-align: right;
+      }
+
+      @include media('<tablet') {
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.app-features-sec-cta {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+section.on-the-road-visual {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @include media('>=tablet') {
+    min-height: 700px;
+    align-items: center;
+  }
+
+  @include media('<tablet') {
+    flex-direction: column;
+  }
+
+  &.peace-visual h2 {
+    @include fluid-type(24px, 38px, 420px, 1024px);
+  }
+
+  &.text-right article {
+    @include media('>=tablet') {
+      justify-content: flex-end;
+      text-align: right;
+      padding-right: 10px;
+    }
+  }
+
+  &.text-center article {
+    @include media('>=tablet') {
+      justify-content: center;
+    }
+  }
+
+  figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include cover();
+
+    @include media('<tablet') {
+      @include ratio-box-old(16/9);
+    }
+  }
+
+  article {
+    display: flex;
+    position: relative;
+    width: 50%;
+    padding: 0 $mobile-gutter;
+
+    @include media('<tablet') {
+      width: 100%;
+      padding: 35px $mobile-gutter;
+    }
+
+    * {
+      @include media('>=tablet') {
+        color: $white;
+      }
+    }
+
+    div {
+      @include media('>=tablet') {
+        max-width: 400px;
+      }
+    }
+
+
+    a {
+      @extend .btn;
+      @extend .blue;
+      @extend .outline;
+      margin-top: 20px;
+    }
+  }
+
+  h2 {
+    @include fluid-type(24px, 30px, 420px, 1024px);
+    line-height: 1.35em;
+  }
+}
+
+section.on-the-road-video {
+  display: flex;
+  padding: 10% $mobile-gutter;
+
+  @include media('<tablet') {
+    flex-direction: column;
+  }
+
+  @include media('<tablet') {
+    padding: 35px $mobile-gutter;
+  }
+
+  article {
+    display: flex;
+
+    @include media('>=tablet') {
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+    }
+
+    @include media('<tablet') {
+      padding-top: 35px;
+    }
+
+    div {
+      @include media('>=tablet') {
+        max-width: 490px;
+      }
+    }
+
+    a {
+      @extend .btn;
+      @extend .blue;
+      @extend .outline;
+    }
+  }
+
+  h2 {
+    @include fluid-type(24px, 38px, 420px, 1024px);
+  }
+
+  strong {
+    font-weight: $text-bold;
+  }
+}
+
+div.on-the-road-video-block {
+  margin-right: 25px;
+
+  @include media('>=tablet') {
+    width: 50%;
+  }
+
+  > div {
+    @include ratio-box-old(16/9);
+    border: 2px solid #26a2bc;
+  }
+
+  figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include cover();
+    cursor: pointer;
+
+    &:hover span.play-icon {
+      transform: scale(1.1);
+    }
+  }
+
+  span.play-icon {
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: relative;
+    transition: transform 350ms ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
+      border-radius: 50%;
+      background: rgba(36,32,32,.5);
+    }
+
+    svg {
+      position: relative;
+
+      circle { stroke: $white; }
+      polygon { fill: $white; }
+    }
+  }
+}
+
+div.on-the-road-iframe-embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 350ms, visibility 350ms;
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+section.on-the-road-bottom {
+  display: flex;
+  padding: 65px $mobile-gutter;
+
+  @include media('>=tablet-m') {
+    justify-content: space-between;
+  }
+
+  @include media('<tablet-m') {
+    flex-direction: column;
+    padding: 35px $mobile-gutter;
+  }
+
+  div.on-the-road-bottom-image {
+    @include media('>=tablet-m') {
+      width: 53%;
+    }
+
+    @include media('<tablet-m') {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  article {
+    @include media('>=tablet-m') {
+      width: 47%
+    }
+
+    @include media('<tablet-m') {
+      padding-top: 35px;
+    }
+  }
+
+  article {
+    display: flex;
+
+    @include media('>=tablet-m') {
+      align-items: center;
+      padding-left: 75px;
+    }
+  }
+
+  h5 {
+    max-width: 415px;
+    line-height: 1.5em;
+  }
+
+  a {
+    @extend .btn;
+    @extend .blue;
+    @extend .outline;
+    margin-top: 20px;
+  }
+}

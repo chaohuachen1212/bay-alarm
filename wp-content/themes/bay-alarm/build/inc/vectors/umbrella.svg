@@ -1,0 +1,11 @@
+<svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 23.6" enable-background="new 0 0 24 23.6" xml:space="preserve">
+<g>
+	<path fill="none" stroke="#231F20" stroke-linejoin="round" stroke-miterlimit="10" d="M23.5,14.5c0.3-6.5-4.9-12-11.5-12
+		c-6.5,0-11.8,5.4-11.5,12c0,0,0-2,2.5-2s3,2,3,2s0.5-2,3-2s3,2,3,2s1-2,3-2s3,2,3,2s1-2,3-2S23.5,14.5,23.5,14.5z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12" y1="2.5" x2="12" y2="0.5"/>
+	<path fill="none" stroke="#231F20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M14.5,22
+		c0,1.5-2.5,1.5-2.5,0v-7.5"/>
+</g>
+</svg>

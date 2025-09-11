@@ -1,0 +1,539 @@
+html.zoom-squish-400,
+html.fontsize,
+html.zoom-squish-ultra,
+body.product-details-page.prod-inhome-new.contrast,
+body.product-details-page.smart-watch.contrast,
+body.product-details-page.prod-inhome-new.contrast {
+
+  .prod-new--wall-btn  {
+
+    .text-box {
+      &::before {
+        display: none;
+      }
+    } // .text-box
+
+  } // .prod-new--wall-btn
+
+} // html.zoom-squish-400, html.fontsize, body.product-details-page.prod-inhome-new.contrast body.product-details-page.smart-watch.contrast
+
+html.zoom-squish-400,
+html.fontsize,
+html.zoom-squish-ultra {
+
+  body.product-details-page.prod-inhome-new.contrast,
+  body.product-details-page.smart-watch.contrast,
+  body.product-details-page {
+
+    .text-wrap {
+      h1,
+      p {
+        color: inherit;
+      }
+    } // .text-wrap
+
+  .in-home-monitoring {
+    article {
+
+      h2:not(a),
+      a,
+      p:not(a),
+      p span {
+        color: inherit !important;
+      }
+
+      p,
+      h2 {
+        a {
+          color: inherit !important;
+        }
+      }
+
+      .btn-wrap {
+        .blue.btn-outline {
+          border-color: inherit;
+        } // .blue.btn-outline
+      } // .btn-wrap
+
+    } // article
+
+  } // .in-home-monitoring
+
+
+  } // body.product-details-page.prod-inhome-new.contrast body.product-details-page.smart-watch.contrast
+
+  body.product-details-page.prod-inhome-new,
+  body.product-details-page.smart-watch,
+  body.product-details-page {
+
+    .prod-new--hero {
+
+      .bg-img.desktop {
+        display: none;
+      } // .bg-img.desktop
+
+      .text-wrap {
+        h1,
+        p {
+          text-align: center;
+          color: #000;
+        }
+
+        p {
+          @include media('>tablet-l') {
+            font-size: 26px;
+          }
+        }
+
+        width: 90%;
+        margin-right: auto;
+
+        .btn-outline {
+          margin: auto;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      } // .text-wrap
+
+      .video-box {
+        margin: 20px auto;
+        max-width: 650px;
+      } // .video-box
+
+    } // .prod-new--hero
+
+  } // body.product-details-page.prod-inhome-new, body.product-details-page.smart-watch
+
+  //===**smartwatch pg styles for both zoom and fontsize**===//
+
+  body.product-details-page.smart-watch,
+  body.product-details-page.prod-inhome-new,
+  body.product-details-page {
+
+    .in-home-monitoring {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      figure {
+        display: none;
+      }
+
+      article {
+        position: relative;
+        top: unset;
+        width: 70%;
+        right: unset;
+        text-align: center;
+        margin: auto;
+
+        h2:not(a),
+        p:not(a),
+        p span {
+          color: #000 !important;
+        }
+
+        p,
+        h2 {
+          a {
+            color: #4ca6bd !important;
+            text-decoration: underline;
+          }
+        }
+      } // article
+
+      .btn-wrap {
+        .blue.btn-outline {
+          border-color: #000;
+        } // .blue.btn-outline
+      } // .btn-wrap
+
+    } // .in-home-monitoring
+
+  } // body.product-details-page.smart-watch
+
+} // html.zoom-squish-400, html.fontsize
+
+html.fontsize {
+
+  body.product-details-page.prod-inhome-new,
+  body.product-details-page.smart-watch,
+  body.product-details-page {
+
+    .in-home-accessories {
+
+      .card {
+        h4 {
+          font-size: inherit;
+        }
+        p {
+          font-size: 23px;
+        }
+      } // .card
+
+    } // .in-home-accessories
+
+    .prod-new--commu {
+
+      .cols-wrap {
+        .col {
+          h6 {
+            font-size: inherit;
+          }
+          p {
+            font-size: 23px;
+          }
+        }
+      } // .cols-wrap
+
+    } // .prod-new--commu
+
+    .prod-new--network {
+
+      .col-wrap {
+        h2 {
+          @include media('>tablet-l') {
+            font-size: 42px;
+          }
+        }
+        p {
+          @include media('>tablet-l') {
+            font-size: 23px;
+          }
+        }
+        .darkblue.btn-outline {
+          color: #fff;
+          border-color: #fff;
+        } // .darkblue.btn-outline
+
+      } // .col-wrap
+
+    } // .prod-new--network
+
+    .prod-new--faq {
+
+      .q-box {
+        h6 {
+          font-size: inherit;
+        }
+      } // .q-box
+
+      .a-box {
+        p {
+          font-size: 23px;
+        }
+      } // .a-box
+
+    } // .prod-new--faq
+
+    .prod-new--helpbtn {
+
+      .col-wraps {
+        .col.col-l {
+          h6 {
+            font-size: inherit;
+          }
+          p {
+            font-size: 23px;
+          }
+        } // .col.col-l
+      } // .col-wraps
+
+    } // .prod-new--helpbtn
+
+    .prod-new--wall-btn {
+
+      .text-box {
+        &::before {
+          display: none;
+        }
+        p {
+          @include media('>tablet-l') {
+            font-size: 23px;
+          }
+        }
+      } // .text-box
+
+    } // .prod-new--wall-btn
+
+    .in-home-monitoring {
+
+      article {
+        p {
+          font-size: 23px;
+        }
+      } // article
+
+
+    } // .in-home-monitoring
+
+  } // body.product-details-page.prod-inhome-new, body.product-details-page.smart-watch
+
+  body.product-details-page.smart-watch {
+
+    .smart-watch--section {
+
+      .sw-r-col {
+        .copy {
+          span {
+            font-size: 20px;
+          }
+          p,
+          .btn-wrap a {
+            font-size: 23px;
+          }
+        } // .copy
+      } // .sw-r-col
+
+    } // .smart-watch--section
+
+    .prod-new--network {
+
+      .bottom-note {
+        max-width: 100%;
+      } // .bottom-note
+
+    } // .prod-new--network
+
+    .prod-new--wall-btn {
+      .text-box {
+        max-width: 90%;
+        margin: auto;
+      }
+    } // .prod-new--wall-btn
+
+    .smartwatch--specifications {
+
+      .r-col {
+        .box {
+          p {
+            font-size: 23px;
+          }
+          small {
+            font-size: 18px;
+          }
+        } // .box
+      } // .r-col
+
+    } // .smartwatch--specifications
+
+  } // body.product-details-page.smart-watch
+
+} // html.fontsize
+
+html.zoom-squish-400 {
+
+  body.product-details-page.smart-watch,
+  body.product-details-page {
+
+    .smart-watch--section {
+      padding-top: 0;
+      padding-bottom: 0;
+    } // .smart-watch--section
+
+    .prod-new--network {
+      padding: 0;
+      background: none;
+      .col-wrap {
+        > .col:first-child {
+          text-align: center;
+          width: 100%;
+
+          h2,
+          p,
+          a {
+            color: #000;
+          }
+          a {
+            border-color: #000;
+          }
+
+          .bottom-note {
+            margin: 20px auto 0 auto;
+          } // .bottom-note
+
+        } // > col:first-child
+
+        > .col:nth-child(2) {
+          display: none;
+        } // > .col:nth-child(2)
+
+      } // .col-wrap
+    } // .prod-new--network
+
+    .prod-new--helpbtn {
+
+      .col-wraps {
+
+        .col.col-l {
+          width: 90%;
+          margin: auto;
+
+          .sec-wrap {
+            section {
+              &::before {
+                display: none;
+              }
+              h6 {
+                i {
+                  display: none;
+                }
+              }
+            } // section
+          } // .sec-wrap
+
+        } // .col.col-l
+
+        .col.col-r {
+          display: none;
+        } // .col.col-r
+
+      } // .col-wraps
+
+    } // .prod-new--helpbtn
+
+    .prod-new--wall-btn {
+      padding-top: 0;
+
+      .background-img {
+        display: none;
+      } // .background-img
+
+      .text-box {
+        max-width: 90%;
+        margin: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+        box-shadow: none;
+      } // .text-box
+
+    } // .prod-new--wall-btn
+
+  } // body.product-details-page.smart-watch
+
+} // html.zoom-squish-400
+
+//===**contrast-only styles**===//
+
+body.product-details-page.prod-inhome-new.contrast,
+body.product-details-page.smart-watch.contrast,
+body.product-details-page.contrast {
+
+  .prod-new--helpbtn {
+
+    .sec-wrap {
+      section {
+        &::before,
+        > h6 {
+          display: none;
+        }
+      }
+    } // .sec-wrap
+
+  } // .prod-new--helpbtn
+
+} // body.product-details-page.prod-inhome-new.contrast body.product-details-page.smart-watch.contrast
+
+html.zoom-squish-ultra {
+
+  .product-details-page {
+
+    #main-page-body {
+
+      * {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+        }
+        p,
+        span,
+        ul li,
+        p *,
+        .btn-outline,
+        img::before {
+          font-size: 10px !important;
+        }
+        img::before {
+          text-align: center;
+          margin: 20px auto;
+          display: flex;
+        }
+        a {
+          * {
+            text-decoration: underline
+          }
+          &:hover {
+            * {
+              text-decoration: none;
+            }
+          }
+        }
+        .btn-outline {
+          margin: 20px auto;
+        }
+      } // *
+
+      section:not(.bottom-get-started) {
+        // get rid of weird overflow
+        max-width: 80%;
+        margin: auto;
+      } // section:not(.bottom-get-started)
+
+    } // #main-page-body
+
+    .prod-new--hero {
+      padding: 20px 0;
+
+      figure {
+        display: none;
+      } // figure
+
+    } // .prod-new--hero
+
+    .in-home-accessories {
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      figure {
+        background-image: none !important;
+      }
+
+    } // .in-home-accessories
+
+    .smart-watch--section {
+
+      .sw-img-wrap {
+        img {
+          display: initial;
+        }
+      } // .sw-img-wrap
+
+    } // .smart-watch--section
+
+    .prod-new--helpbtn {
+      margin-top: 20px !important;
+      h6 {
+        i.icon {
+          margin-top: 20px;
+        }
+      }
+
+      .grid-2col,
+      .grid.grid-1 {
+        display: none;
+      } // .grid-2col
+    } // .prod-new--helpbtn
+
+  } // .product-details-page
+
+} // html.zoom-squish-ultra

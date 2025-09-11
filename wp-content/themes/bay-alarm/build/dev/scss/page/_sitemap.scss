@@ -1,0 +1,101 @@
+// 
+// Hero section style inherites from Languages page
+//
+
+.sitemap-page {
+  .max-container {
+      max-width: 2800px;
+    }
+
+   .pricing-promo, .header-mega-wrap {
+     max-width: 2800px;
+   }
+
+   .header-stick--tabs .container {
+     max-width: 2800px;
+   }
+
+   header[role='banner'] .header-wrap {
+     max-width: 2800px;
+   }
+}
+
+
+.sitemap-wrap {
+  width: 100%;
+  margin: 70px auto 120px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media('<=tablet')  {
+    margin: 70px auto 90px;
+  }
+
+  .col {
+    @include col(1/3);  
+
+    @include media('<=tablet')  {
+      width: 100%;
+    }
+
+     &:not(:last-child) {
+        border-right: 1px solid #BEBEBE;
+
+         @include media('<=tablet')  {
+            border-right: none;
+            border-bottom: 1px solid #BEBEBE;
+            margin-bottom: 40px;
+         }
+
+        ul {
+          list-style: none;
+          padding-left: 0;
+        }
+
+     }
+  }
+
+  h6 {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3C3A42;
+
+    a {
+      font-weight: 700;
+    }
+  }
+
+  a:hover {
+    color: $blue;
+  }
+
+  ul, ol {
+    margin: 0;
+    padding-left: 27px;
+    margin-bottom: 35px;
+  }
+
+  li {
+    margin-bottom: 15px;
+    color: #595252;
+    font-size: 18px;
+    line-height: 33px;
+
+    a {
+      color: #595252;
+    }
+  }
+}
+
+.sitemap--hero {
+  background-color: #F2EFEA;
+  padding: 50px 0;
+
+  h1 {
+    font-weight: 800;
+    color: #3C3A42;
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+}

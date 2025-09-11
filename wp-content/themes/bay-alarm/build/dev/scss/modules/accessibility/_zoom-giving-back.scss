@@ -1,0 +1,161 @@
+html.zoom-squish-400 {
+
+  body.giving-back.contrast {
+
+    .giving-back-hero {
+      h1,
+      p {
+        color: #fff;
+      }
+    } // giving-back-hero
+
+  } // body.giving-back.contrast
+
+  body.giving-back {
+
+    .giving-org-wrap {
+      width: 75%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 52px;
+      > div:first-child {
+        display: none;
+      }
+    } // .giving-org-wrap
+
+  } // body.giving-back
+
+} // html.zoom-squish-400
+
+html.fontsize {
+
+  body.giving-back {
+    font-size: 164% !important;
+  } // body.giving-back
+
+} // html.fontsize
+
+html.fontsize,
+html.zoom-squish-400,
+html.zoom-squish-ultra {
+
+  body.giving-back {
+    letter-spacing: unset !important;
+    .giving-back-hero {
+      background-image: none !important;
+      padding: 100px 0 180px;
+      * {
+        text-align: center !important;
+        color: #000;
+      }
+      p {
+        font-size: 1rem;
+        margin-right: auto !important;
+        max-width: 820px !important;
+      }
+    } // .giving-back-hero
+
+    .giving-back-video {
+      margin-right: auto !important;
+      margin-left: auto !important;
+      width: 75% !important;
+      display: block !important;
+
+      > div:first-child {
+        margin-bottom: 60px !important;
+      }
+      .giving-video-copy,
+      .giving-video-copy span {
+        display: block;
+      }
+    } // .giving-back-video
+
+    .giving-org-wrap {
+      p {
+        @include media('>tablet') {
+          font-size: 23px !important;
+        }
+      }
+    } // .giving-org-wrap
+
+  } // body.giving-back
+
+} // html.fontsize, html.zoom-squish-400
+
+html.zoom-squish-ultra {
+
+  body.giving-back {
+
+    #main-page-body {
+
+      * {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+        }
+        p,
+        span,
+        ul li,
+        p *,
+        .btn-outline {
+          font-size: 10px !important;
+        }
+        a {
+          * {
+            text-decoration: underline
+          }
+          &:hover {
+            * {
+              text-decoration: none;
+            }
+          }
+        }
+        img {
+          display: none;
+        }
+        figure {
+          background-image: none !important;
+          background-color: #fff;
+        }
+      } // *
+
+    } // #main-page-body
+
+    .giving-back-hero {
+
+      padding: 10px 0;
+
+    } // .giving-back-hero
+
+    .giving-back-video {
+
+      margin: auto;
+
+      > div {
+        margin-bottom: 20px !important;
+      }
+
+    } // .giving-back-video
+
+    .giving-back-orgs  {
+      padding: 20px 0;
+      max-width: 75%;
+      margin: auto;
+
+      h3 {
+        padding-bottom: 10px;
+      }
+
+      figure {
+        display: none;
+      }
+
+    } // .giving-back-orgs
+
+  } // body.giving-back
+
+} // html.zoom-squish-ultra

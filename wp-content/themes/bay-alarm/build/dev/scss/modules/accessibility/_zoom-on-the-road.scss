@@ -1,0 +1,378 @@
+body.on-the-road {
+  .contrast-img {
+    display: none;
+  }
+} // body.on-the-road
+
+html.zoom-squish-400,
+html.fontsize,
+html.zoom-squish-ultra {
+
+  body.on-the-road.contrast {
+
+    .on-road-hero {
+
+      .hero-text-wrap {
+        h1,
+        p {
+          color: inherit;
+        }
+      } // .hero-text-wrap
+
+    } // .on-road-hero
+
+    .on-the-road-visual {
+      h2,
+      p {
+        color: inherit;
+      }
+    } // .on-the-road-visual
+
+
+  } // body.on-the-road.contrast
+
+  body.on-the-road {
+
+    .on-road-hero {
+
+      .hero-img {
+        display: none;
+      } // .hero-img
+
+      .hero-text-wrap {
+        h1,
+        p {
+          color: #000;
+          text-align: center;
+        }
+        p {
+          margin: auto;
+          line-height: 1;
+          max-width: 75%;
+        }
+
+        .on-the-road-video-block {
+          margin: 40px auto;
+        } // .on-the-road-video-block
+
+      } // .hero-text-wrap
+
+    } // .on-road-hero
+
+    .splitsecnd-app.app-features-sec {
+      max-width: 75%;
+
+      .content-col {
+        .icon {
+          &::before {
+            display: none;
+          }
+        }
+      } // .content-col
+
+    } // .splitsecnd-app.app-features-sec
+
+    .on-the-road-visual {
+
+      > figure {
+        display: none;
+      }
+
+      article {
+        h2,
+        p {
+          color: #000;
+          text-align: center;
+        }
+
+        width: 75%;
+        margin: auto;
+
+        > div {
+          max-width: 100%;
+        }
+
+      } // article
+
+      @include media('>mobile') {
+        min-height: unset;
+        padding-top: 75px;
+        padding-bottom: 75px;
+      }
+
+    } // .on-the-road-visual
+
+    .splitsecnd-features {
+
+      .splitsecnd-detail {
+
+        ul {
+          @include media('>mobile') {
+            margin-left: 30px;
+          }
+          li {
+            margin-bottom: 15px;
+          }
+        }
+
+        max-width: 1330px;
+      } // .splitsecnd-detail
+
+    } // .splitsecnd-features
+
+    .on-the-road-video {
+      > article {
+        > div {
+          max-width: 90%;
+        }
+      }
+      padding-top: 75px;
+      padding-bottom: 75px;
+    } // .on-the-road-video
+
+    .on-the-road-bottom {
+      > article {
+        > div {
+          h5 {
+            @include media('>tablet') {
+              font-size: inherit;
+            }
+          }
+        }
+      }
+    } // .on-the-road-bottom
+
+  } // body.on-the-road
+
+} // html.zoom-squish-400, html.fontsize
+
+html.zoom-squish-400 {
+
+  body.on-the-road {
+
+    .splitsecnd-app.app-features-sec {
+      .mobile-col {
+        display: none;
+      }
+
+      .listing-wrap {
+        padding-bottom: 60px;
+
+        .content-col {
+          width: 80%;
+          float: none;
+          margin: auto;
+          text-align: center;
+
+          .item-wrap {
+
+            .list-tiem {
+              .icon {
+                margin-right: auto;
+              }
+            } // .list-tiem
+
+          } // .item-wrap
+
+          .bottom-img {
+            display: none;
+          } // .bottom-img
+
+        } // .content-col
+
+      } // .listing-wrap
+
+    } // .splitsecnd-app.app-features-sec
+
+    .splitsecnd-features {
+
+      .splitsecnd-detail {
+        > div {
+          img {
+            max-width: 50%;
+            margin: auto;
+            display: block;
+          }
+        }
+      } // .splitsecnd-detail
+
+    } // .splitsecnd-features
+
+    .on-the-road-visual {
+      padding-top: 15px;
+      padding-bottom: 42px;
+    } // .on-the-road-visual
+
+    .on-the-road-bottom {
+
+      .on-the-road-bottom-image {
+        max-width: 30%;
+      } // .on-the-road-bottom-image
+
+    } // .on-the-road-bottom
+
+
+  } // body.on-the-road
+
+} // html.zoom-squish-400
+
+html.fontsize {
+
+  body.on-the-road {
+
+  } // body.on-the-road
+
+} // html.fontsize
+
+//===**contrast-only styles**===//
+
+body.on-the-road.contrast {
+  .contrast-img {
+    display: inline-block;
+  }
+} // body.on-the-road.contrast
+
+html.zoom-squish-ultra {
+
+  body.on-the-road {
+
+    #main-page-body {
+
+      * {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+        }
+        p,
+        span,
+        ul li,
+        p *,
+        .btn-outline {
+          font-size: 10px !important;
+        }
+        a {
+          * {
+            text-decoration: underline
+          }
+          &:hover {
+            * {
+              text-decoration: none;
+            }
+          }
+        }
+        img {
+          display: none;
+        }
+        figure {
+          display: none;
+        }
+        .btn-outline {
+          margin: 20px auto;
+        }
+      } // *
+
+    } // #main-page-body
+
+    .on-road-hero {
+      padding: 0 20px;
+    } // .on-road-hero
+
+    .on-the-road-awards {
+      margin: 0 auto;
+      padding: 20px 0;
+
+      .awards-quote {
+        padding: 20px;
+        &::after {
+          display: none;
+        }
+        &::before {
+          position: relative;
+          font-size: 16px;
+        }
+
+        &-copy {
+        }
+      } // .awards-quote
+
+    } // .on-the-road-awards
+
+    .on-the-road-awards-row {
+      padding: 20px;
+
+      .awards-logo-container {
+        max-width: 75%;
+        margin: auto;
+
+        .awards-logo-row {
+          margin-right: auto;
+          margin-left: auto;
+
+          .awards-logo {
+            padding-right: 0;
+            figure {
+              display: block !important;
+              max-width: 25%;
+              height: 20px;
+            }
+
+          } // .awards-logo
+
+        } // .awards-logo-row
+
+      } // .awards-logo-container
+
+    } // .on-the-road-awards-row
+
+    .splitsecnd-app.app-features-sec {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .list-tiem {
+        text-align: center;
+        margin-bottom: 20px;
+
+        .icon {
+          display: none;
+        }
+      } // .list-tiem
+
+    } // .splitsecnd-app.app-features-sec
+
+    .on-the-road-video {
+      &-block {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    } // .on-the-road-video
+
+
+    .on-the-road-visual,
+    .splitsecnd-features,
+    .on-the-road-visual,
+    .on-the-road-video,
+    .on-the-road-visual,
+    .on-the-road-visual article,
+    .on-the-road-bottom  {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    } // .on-the-road-visual
+
+    .on-the-road-video-block {
+      width: 80%;
+      > div {
+        width: 100%;
+        display: block;
+        height: 190px;
+        figure {
+          display: flex !important;
+        }
+      } // > div
+    } // .on-the-road-video-block
+
+  } // body.on-the-road
+
+} // html.zoom-squish-ultra

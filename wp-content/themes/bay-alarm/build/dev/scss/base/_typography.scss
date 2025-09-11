@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$monsterrat: "Montserrat", sans-serif;
+
+$base-font: $sans;
+// $heading-font: 'Circular TT', sans-serif;
+// $body-font: 'Circular TT', sans-serif;
+$heading-font: $monsterrat;
+$body-font: $monsterrat;
+
+$text-thin: 300;
+$text-normal: 500;
+$text-bold: 900;
+
+// Letterspacing
+$tight-spacing: -.045em;
+$snug-spacing:  -.02em;
+$more-spacing:  .1em;
+
+
+body, p, a, h1, h2, h3, h4, h5, h6,
+small, em, strong, input, button {
+  font-family: $body-font;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  color: $primary-text;
+  // letter-spacing: $tight-spacing;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+// Global responsive typography
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 1rem 0;
+  line-height: 1em;
+  font-weight: $text-thin;
+  color: $dark-blue;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  a {
+    color: inherit;
+    transition: color 0.5s, border 0.5s;
+  }
+}
+
+// Specific to each header
+
+h1 {
+  @include fluid-type(40px, 60px, 420px, 1024px);
+  line-height: 1.05em;
+
+  &.large {
+    @include fluid-type(40px, 60px, 420px, 1024px);
+  }
+
+  &.heading {
+    @include fluid-type(40px, 60px, 420px, 1024px);
+    font-weight: $text-normal;
+  }
+}
+
+h2 {
+  @include fluid-type(36px, 45px, 420px, 1024px);
+
+  &.heading {
+    margin-bottom: 5px;
+  }
+}
+
+h3 {
+  @include fluid-type(32px, 38px, 420px, 1024px);
+}
+
+h4 {
+  @include fluid-type(24px, 26px, 420px, 1024px);
+}
+
+h5 {
+  @include fluid-type(20px, 22px, 420px, 1024px);
+}
+
+h6 {
+  @include fluid-type(18px, 20px, 420px, 1024px);
+}
+
+// Generic Styles
+
+p {
+  @include fluid-type(16px, 17px, 420px, 1024px);
+  line-height: 1.45em;
+  margin: 1em 0;
+  font-weight: 500;
+  color: $dark-gray4;
+
+  &.smaller {
+    font-size: rem(16px);
+  }
+
+  &.larger {
+    font-size: rem(18px);
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.5s, border 0.5s, background 0.5s;
+}
+
+nav ul {
+  @include inline-list();
+}
+
+blockquote {
+  margin: 0;
+
+  cite {
+    display: block;
+  }
+}
+
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.font-800 {
+  font-weight: 800;
+}
+

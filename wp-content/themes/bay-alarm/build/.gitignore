@@ -1,0 +1,8 @@
+**/.DS_Store
+*.DS_Store
+.DS_Store
+dev/node_modules
+dev/package-lock.json
+style.css
+js/app.js
+maps

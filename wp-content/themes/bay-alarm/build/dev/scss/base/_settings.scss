@@ -1,0 +1,35 @@
+// General Settings
+$base-font-size: 16px;
+$global-border-radius: 3px;
+$mobile-gutter: 5%;
+
+$mobile-nav-point: 1215px;
+
+$header-height: 72px;
+$header-height-tablet-l: 72px;
+$header-height-mobile-l: 55px;
+$site-basis: 1280;
+$site-basis-mobile: 375;
+
+// Breakpoints to be used with include-media
+// Example Css: http://include-media.com/#features
+
+$mobile: 320px;
+$mobile-l: 640px;
+$tablet: 768px;
+$tablet-m: 900px;
+$tablet-m2: 960px;
+$tablet-l: 1024px;
+$desktop: 1280px;
+$max-site-width: 1600px;
+
+$breakpoints: (
+  'mobile': $mobile,
+  'mobile-l': $mobile-l,
+  'tablet': $tablet,
+  'tablet-m': $tablet-m,
+  'tablet-m2': $tablet-m2,
+  'tablet-l': $tablet-l,
+  'desktop': $desktop,
+  'max-site-width': $max-site-width
+);

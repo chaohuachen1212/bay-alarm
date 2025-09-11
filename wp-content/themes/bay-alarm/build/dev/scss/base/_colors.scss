@@ -1,0 +1,90 @@
+// Colors by name
+//
+// NOTE:  Please do not reference these directly.
+//        For semantic purposes, please reference
+//        a color by its use name below.
+//
+// –––––––––––––––––––––––––––––––––––––––––––––––
+$white:     #fff;
+$black:     #242020;
+$black1:    #000000;
+$off-black: #333;
+$dark-blue: #3C3A42;
+
+$navy: #242A34;
+
+$base-gray: #707f8c;
+$dark-gray: #6B6B6B;
+$dark-gray2: #424242;
+$dark-gray3: #DADADA;
+$dark-gray4: #595252;
+
+$headers: #333;
+
+$light-gray: #f6f6f6;
+
+
+$red: #EC4A48;
+$orange: #FB891F;
+
+$blue: #4CA6BD;
+$blue-bright: #43BDDB;
+$blue-bright2: #62C1CF;
+$blue-bright3: #66defd;
+$blue-bright4: #3C9EB4;
+$blue-bright5: #61A3B9;
+$blue-dark: #0586A5;
+$blue-darker: #2F5865;
+$bg-blue: #EDF5F7;
+
+$sea-blue: #0B7595;
+
+$background-blue: #256886;
+
+$teal: #3BE0C0;
+
+$green: #22B784;
+
+$text-gray: #84848c;
+$text-gray2: #757b7d;
+$text-gray3: #3E3E3E;
+
+$background-gray: #EBEBEB;
+
+$border-gray: #F0F0F0;
+$border-gray2: #CFCFCF;
+$border-gray-dark: #737373;
+
+$white-faded: rgba(255, 255, 255, .7);
+
+$small-text: #ABABAB;
+
+$beige: #F2EFEA;
+$bam-red: #DB4E3B;
+$dark-blue: #3C3A42;
+$light-blue: #AECBF4;
+$light-grey: #EDF3FA;
+
+
+// Colors by Use
+//
+// See example here: https://gist.github.com/dbox/e7b206a04d39598e32237b5f1317ef83
+//
+// –––––––––––––––––––––––––––––––––––––––––––––––
+
+// General
+$color-primary:   $color-primary;
+
+// Buttons
+$primary-button:  $color-primary;
+
+// Backgrounds
+
+// Typography
+$primary-text:    darken($base-gray, 15%);
+$primary-heading: darken($base-gray, 25%);
+
+// Interactive
+$primary-button:  $color-primary;
+
+// Borders

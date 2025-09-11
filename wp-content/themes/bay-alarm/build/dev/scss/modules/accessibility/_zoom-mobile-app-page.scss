@@ -1,0 +1,132 @@
+html.zoom-squish-400,
+html.fontsize {
+
+  body.mobile-app-page.contrast {
+
+    .para-hero {
+
+      .hero-text-wrap {
+
+        p,
+        h1 {
+          color: inherit;
+        }
+
+      } // .hero-text-wrap
+
+    } // .para-hero
+
+  } // body.mobile-app-page.contrast
+
+  body.mobile-app-page {
+
+    .para-hero {
+
+      figure.hero-img.hero-img-1 {
+        display: none;
+      } // figure.hero-img.hero-img-1
+
+      .hero-text-wrap {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+
+        p,
+        h1 {
+          color: #000;
+        }
+
+      } // .hero-text-wrap
+
+    } // .para-hero
+
+    .prod-intro-sec {
+
+      .col.col-text {
+        width: 100%;
+      } // .col.col-text
+
+      .col.col-img {
+        display: none;
+      } // .col.col-img
+
+    } // .prod-intro-sec
+
+    .app-features-sec {
+
+      .intro {
+        p {
+          width: 80%;
+          max-width: 100%;
+        }
+      } // .intro
+
+      .listing-wrap {
+        overflow: hidden;
+        .item-wrap {
+          .icon {
+            &::before {
+              display: none;
+            }
+          } // .icon
+        } // .item-wrap
+
+        padding-bottom: 0;
+
+      } // .listing-wrap
+
+    } // .app-features-sec
+
+    .app-bottom {
+
+      padding-top: 0;
+
+      .badges-wrap {
+        display: flex;
+        justify-content: center;
+      } // .badges-wrap
+
+    } // .app-bottom
+
+  } // body.mobile-app-page
+
+} // html.zoom-squish-400, html.fontsize
+
+html.fontsize {
+
+  body.mobile-app-page {
+
+    .listing-wrap {
+      .item-wrap {
+        margin-left: 40px;
+      } // .item-wrap
+
+    } // .listing-wrap
+
+  } // body.mobile-app-page
+
+} // html.fontsize
+
+html.zoom-squish-400 {
+
+  body.mobile-app-page {
+
+    .listing-wrap {
+
+      .item-wrap {
+        margin-right: auto;
+        margin-left: auto;
+      } // .item-wrap
+
+    } // .listing-wrap
+
+
+  } // body.mobile-app-page
+
+} // html.zoom-squish-400
+
+//===**contrast-only styles**===//
+
+// body.mobile-app-page.contrast {
+//
+// } // body.mobile-app-page.contrast

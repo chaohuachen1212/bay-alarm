@@ -1,0 +1,15 @@
+<svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<g>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M38,1c0,5-4,3-4,7"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M43,1c0,5-4,3-4,7"/>
+	<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="7,27 7,47 19,47 
+		19,33 29,33 29,47 41,47 41,28 	"/>
+	<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="1,26 24,4 47,26 	
+		"/>
+	<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="31.3,11 39,11 
+		39,18.3 	"/>
+</g>
+</svg>

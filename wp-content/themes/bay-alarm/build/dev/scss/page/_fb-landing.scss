@@ -1,0 +1,126 @@
+body.fb-landing {
+  .header-nav,
+  .header-menu-btn {
+    display: none;
+  }
+}
+
+section.fb-landing-hero {
+  @include cover();
+  background-position: left center;
+  padding: 0 $mobile-gutter;
+  text-align: center;
+
+  div {
+    padding: 120px 0;
+
+    @include media('<tablet-m2') {
+      padding: 75px 0;
+    }
+  }
+
+  h1 {
+    @include fluid-type(32px, 42px, 420px, 1024px);
+    color: $white;
+    margin-bottom: 35px;
+  }
+
+  a {
+    position: relative;
+    padding: 15px 25px 15px 60px;
+    color: $white;
+    background: #304d4f;
+    font-size: rem(16px);
+    border: none;
+    text-transform: none;
+
+    &:hover {
+      background: $red;
+
+      span {
+        color: $white;
+      }
+
+      svg circle {
+        fill: $red;
+      }
+    }
+
+    svg {
+      position: absolute;
+      top: 10px;
+      left: 21px;
+      width: 25px;
+      height: 25px;
+
+      path {
+        fill: $white;
+      }
+
+      circle {
+        fill: #304d4f;
+        transition: fill 350ms;
+      }
+    }
+  }
+}
+
+section.fb-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0 150px $mobile-gutter;
+
+  @include media('<tablet-m2') {
+    padding: 35px 0 35px $mobile-gutter;
+  }
+
+  > div {
+    width: 50%;
+
+    @include media('<tablet-m2') {
+      width: 100%;
+    }
+
+    &:first-child {
+      @include media('>=tablet-m2') {
+        padding-right: 75px;
+      }
+
+      @include media('<tablet-m2') {
+        padding-right: $mobile-gutter;
+      }
+    }
+  }
+
+  div.fb-copy:not(:first-child) {
+    margin-top: 100px;
+
+    @include media('<tablet-m2') {
+      margin-top: 50px;
+    }
+  }
+
+  div.fb-btn {
+    margin-top: 50px;
+    text-align: center;
+
+    @include media('<tablet-m2') {
+      margin-bottom: 50px;
+    }
+  }
+
+  h2 {
+    @include fluid-type(28px, 35px, 420px, 1024px);
+    color: #242020;
+  }
+
+  p {
+    color: #757b7d;
+  }
+
+  figure {
+    @include cover($x: right);
+    background-size: contain;
+    @include ratio-box-old(1/1);
+  }
+}

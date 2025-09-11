@@ -1,0 +1,102 @@
+.health-partner-detail {
+	.max-container {
+    max-width: 2800px;
+  }
+
+  .pricing-promo, .header-mega-wrap {
+    max-width: 2800px;
+  }
+
+  .header-stick--tabs .container {
+    max-width: 2800px;
+  }
+
+  header[role='banner'] .header-wrap {
+    max-width: 2800px;
+  }
+
+  .new-home--logo-block {
+  	border-bottom: none;
+
+  	.eyebrows {
+  		text-align: center;
+  		display: block;
+  		margin-bottom: 1rem;
+  	}
+  }
+
+	h2 {
+		font-weight: 800;
+		font-size: 36px;
+		margin-bottom: 25px;
+		line-height: 1.2;
+
+    br {
+      @include media('<tablet') {
+        display: none;
+      }
+    }
+	}
+}
+
+.health-partner--main {
+  margin: 70px 0 100px;
+
+  @include media('<tablet') {
+    margin: 50px 0 100px;
+  }
+
+  .top-wrap {
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+
+
+    p {
+      font-size: 20px;
+      line-height: 33px;
+    }
+  }
+
+  .content-wrap {
+    margin-top: 110px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+  }
+
+  article {
+    width: 53%;
+
+    @include media('<tablet') {
+      width: 100%;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 33px;
+    }
+  }
+
+  figure {
+    width: 41%;
+
+    @include media('<tablet') {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+} 
+

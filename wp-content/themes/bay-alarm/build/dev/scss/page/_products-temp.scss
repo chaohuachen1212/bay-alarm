@@ -1,0 +1,1744 @@
+// Product Specific
+body.product-cellular section.prod-intro-sec div.col-text {
+  padding: 0;
+}
+
+body.prod-inhome .prod-module-cellular .map-coverage {
+  margin-bottom: 10px;
+}
+
+body.gps-temp {
+  section.prod-intro-sec {
+    padding: 0 0 30px 6.3%;
+
+    @include media('<mobile-l') {
+      padding: 0 0 0 5%;
+    }
+
+    div.col-img {
+      padding-left: 10%;
+
+      img {
+        @include media('>tablet') {
+          margin-top: -50%;
+        }
+      }
+    }
+
+    div.col-text {
+      padding: 0 0 5%;
+
+      @include media('<mobile-l') {
+        padding: 0 5% 5% 0;
+      }
+    }
+  }
+
+  section.prod-base-station {
+    padding: 80px 5% 50px;
+
+    div.prod-sec-heading {
+      padding: 0 5% 50px;
+    }
+
+    div.prod-sec-heading h3 {
+      color: $black;
+      font-size: 38px;
+    }
+  }
+}
+
+body.fall-detection-temp {
+  section.prod-intro-sec {
+    div.col-img img {
+      @include media('>tablet') {
+        margin-top: -50%;
+      }
+    }
+  }
+}
+
+.prod-hero-copy {
+  padding: 65px 5%;
+  text-align: center;
+  max-width: 755px;
+  margin: 0 auto;
+}
+
+.prod-video-wrap {
+  width: 100% !important;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+
+  > div {
+    width: 90%;
+
+    @include media('>tablet') {
+      width: 50%;
+    }
+  }
+}
+
+section.bundle-hero {
+  position: relative;
+
+  figure {
+    @include ratio-box-old(16/9);
+    max-height: 589px;
+    min-height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  h1 {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    margin: 0;
+    color: $white;
+    @include fluid-type(32px, 42px, 420px, 1024px);
+    font-weight: $text-normal;
+
+    @include media('<tablet') {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      padding: 25px $mobile-gutter 0;
+      color: $primary-heading;
+    }
+  }
+}
+
+
+
+
+// ============================================================================
+//  BAM App Section
+// ============================================================================
+.prod-app-section {
+  padding: 0 6.3%;
+  position: relative;
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+
+  .wrap {
+    @include media('>tablet') {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: stretch;
+    }
+
+    &.is-reverse {
+      @include media('>tablet') {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .col-img {
+    width: 50%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+
+    @include media('<=tablet-l') {
+      width: 100%;
+    }
+  }
+
+
+  .col-text {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    margin: 50px 0;
+
+    @include media('<=tablet-l') {
+      max-width: 640px;
+      width: 100%;
+      padding: 0;
+      display: block;
+      margin: 60px auto 0;
+    }
+  }
+
+  .text-wrap {
+    @include media('<=tablet-l') {
+      text-align: center;
+    }
+  }
+
+  .badge-wrap {
+    margin-top: 30px;
+
+    @include media('<=tablet-l') {
+      text-align: center;
+    }
+
+    img {
+      max-width: 190px;
+
+      @include media('<=mobile-l') {
+        max-width: 130px;
+      }
+
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+
+}
+
+// ============================================================================
+//  Section Heading Module - common style
+// ============================================================================
+.product-details-page {
+  .prod-sec-heading {
+    .heading {
+      color: $black;
+      text-align: center;
+      font-size: rem(33px);
+      margin-bottom: 10px;
+      line-height: 1.3em;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: rem(17px);
+      text-align: center;
+      color: $text-gray;
+    }
+  }
+}
+
+
+// ============================================================================
+//  Hero
+// ============================================================================
+.textleft-hero {
+
+  .hero-text-wrap {
+    @include align(both);
+    transform: translate(0%, -50%);
+    top: 54%;
+    left: 6.3%;
+
+    @include media('<=mobile-l') {
+      width: 80%;
+    }
+  }
+
+  &.prod-video-hero {
+    height: 420px;
+
+    @include media('<=mobile-l') {
+      height: 510px;
+    }
+
+    p {
+      // font-size: rem(22px);
+      padding-bottom: 35px;
+      // padding-top: 10px;
+      max-width: 525px;
+      // color: white;
+      // line-height: normal;
+    }
+
+    a.btn {
+      position: relative;
+      padding: 15px 27px 15px 50px;
+
+      &::before {
+        content: '';
+        @include triangle(right, 12px, white);
+        position: absolute;
+        left: 25px;
+        top: 9px;
+        transition: border-color 250ms;
+      }
+
+      &:first-of-type {
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      &:hover::before {
+        border-left-color: $black;
+      }
+    }
+  }
+
+  h1,
+  p {
+    text-align: left;
+    color: $white;
+    margin: 0;
+  }
+
+  h1 {
+    @include fluid-type(32px, 42px, 420px, 1024px);
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.1em;
+    max-width: 600px;
+  }
+
+  p {
+    color: rgba($white, 0.7);
+
+    a  {
+      color: $white;
+      font-weight: bold;
+      border-bottom: 1px solid white;
+
+
+      &:hover {
+        color: rgba($white, .75);
+      }
+    }
+  }
+
+  .hero-img-1 {
+    background-position: top center;
+  }
+}
+
+
+// ============================================================================
+//  Product Intro Section
+// ============================================================================
+.prod-intro-sec {
+  padding: 0 6.3%;
+  position: relative;
+  border-bottom: 1px solid $border-gray;
+
+  @include media('<tablet') {
+    padding: 0 6% 60px;
+  }
+
+  img { width: 100%; }
+
+  .container-wrap {
+    @include cf();
+
+    @include media('>tablet') {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: stretch;
+
+      &.no-map {
+        align-items: center;
+
+        // ul,
+        // .map-coverage {
+        //   display: none;
+        // }
+      }
+    }
+  }
+
+  // Col Text
+  //===========================================
+  .col-text {
+    width: 40%;
+    padding: 5% 0;
+
+    @include media('<=tablet') {
+      width: 100%;
+      padding: 0;
+    }
+
+    ul {
+      margin: 50px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: rem(18px);
+      margin-bottom: 15px;
+    }
+  }
+
+  // Col Image
+  //===========================================
+  .col-img {
+    width: 60%;
+
+    @include media('>tablet') {
+      padding-left: 3%;
+    }
+
+    @include media('<=tablet') {
+      width: 100%;
+    }
+  }
+
+  // Product Image
+  //===========================================
+  .prod-img {
+    width: 100%;
+    margin-top: -38%;
+
+    @include media('<=tablet') {
+      margin-top: -5%;
+    }
+  }
+
+  // Map Coverage
+  //===========================================
+  .map-coverage {
+    @include cf();
+    display: table;
+    width: 100%;
+    border: 1px solid $border-gray2;
+    margin-bottom: 80px;
+
+    @include media('<tablet') {
+      margin-bottom: 0;
+    }
+  }
+
+  .map-col,
+  .map-text-col {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .map-text-col {
+    padding: 6% 3%;
+
+    p, a {
+      font-size: rem(14px);
+      line-height: 1.2em;
+    }
+
+    a {
+      color: $text-gray;
+      margin-top: 15px;
+      display: inline-block;
+    }
+  }
+}
+
+
+
+// ============================================================================
+//  FAQ
+// ============================================================================
+.prod-faq-sec {
+  padding: 50px 5%;
+  border-bottom: 1px solid $border-gray;
+
+  // Columns
+  //===========================================
+  .highlight-container {
+    @include cf();
+    margin-top: 75px;
+  }
+
+  .col {
+    @include col(1/3, $gutter: 4);
+
+    @include media('<=tablet') {
+      @include stack();
+      margin-bottom: 50px;
+    }
+  }
+
+  div.prod-sec-heading {
+    h3.heading {
+      font-weight: 500;
+    }
+  }
+
+
+  // Icon Wrap
+  //===========================================
+  .col-icons {
+    display: table;
+    margin: 0 auto;
+  }
+
+  .icon-wrap {
+    @include cf();
+    position: relative;
+    display: inline-block;
+
+    &.two-circle:nth-of-type(2) {
+      margin-left: -23px;
+    }
+  }
+
+  .icon-circle {
+    display: inline-block;
+    float: left;
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0.8;
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &.gray {
+      background-color: #efefef;
+    }
+
+    &.blue {
+      background-color: #007dce;
+    }
+
+    &.teal {
+      background-color: #2da6c5;
+    }
+
+    &.teal-dark {
+      background-color: #0f7b98;
+    }
+  }
+
+  .icon {
+    @include align(both);
+    width: 50px;
+    height: 50px;
+
+    &.logo {
+      width: 60px;
+      height: 60px;
+    }
+
+    * {
+      stroke: $white;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // Typography
+  //===========================================
+  .col-title,
+  .col-text {
+    display: block;
+  }
+
+  .col-title {
+    text-align: center;
+    color: $black;
+    max-width: 215px;
+    margin: 20px auto 30px;
+    font-weight: 500;
+
+    @include media('<=tablet') {
+      margin: 20px auto 0;
+    }
+  }
+
+  .col-text {
+    padding: 0 15px;
+    margin: 20px auto 30px;
+
+    p {
+      text-align: center;
+      color: $text-gray2;
+      margin: 0;
+    }
+
+    a {
+      color: $blue;
+
+      &:hover {
+        border-bottom: 1px solid $blue;
+      }
+    }
+  }
+}
+
+
+
+
+
+// ============================================================================
+//  Product Video Sec
+// ============================================================================
+.prod-videos-sec {
+  padding: 50px 5% 80px;
+  background: $light-gray;
+  border-bottom: 1px solid $border-gray;
+
+  .videos-container {
+    @include cf();
+  }
+
+  .cell {
+    @include span(1/2, $cycle: 2);
+    padding: 0 5%;
+    padding-top: 40px;
+
+    @include media('<=mobile-l') {
+      @include stack();
+    }
+  }
+
+  .v-wrap {
+    max-width: 380px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &:hover .icon-circle {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover .v-name {
+      color: $blue;
+    }
+  }
+
+  .v-img {
+    @include cover()
+    @include ratio-box(1/1);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: solid 3px #E8E8E8;
+  }
+
+  .play-icon {
+    @include align(both);
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    z-index: 5;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    circle {
+      stroke: $white;
+    }
+
+    polygon {
+      fill: $white;
+    }
+  }
+
+  .icon-circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: rgba($black, 0.65);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .v-name {
+    text-align: center;
+    margin: 35px 0;
+    font-size: rem(25px);
+    font-weight: 600;
+    color: $black;
+    letter-spacing: normal;
+    transition: color 0.3s;
+  }
+}
+
+
+
+
+// ============================================================================
+//  Product Section
+// ============================================================================
+.prod-spec-sec {
+  @include cf();
+  padding: 60px 5%;
+  border-bottom: 1px solid $border-gray;
+
+  .prod-wrap {
+    width: 65%;
+    position: relative;
+    margin-top: 70px;
+
+    @include media('>tablet-l') {
+      margin-bottom: 230px;
+      float: right;
+    }
+
+    @include media('<=tablet-l') {
+      max-width: 600px;
+      width: 100%;
+      margin: 70px auto 0;
+      display: table;
+    }
+  }
+
+  .prod-img {
+    width: 100%;
+  }
+
+
+  // Feature Box
+  // -------------------------------
+  .feature-box {
+    &:last-child div.feature-text-wrap {
+      h6, p {
+        text-align: left;
+        float: left;
+      }
+    }
+
+    @include media('>tablet-l') {
+      .line {
+        position: absolute;
+        border-color: rgba($blue, 0.9);
+        border-style: solid;
+        border-width: 0;
+      }
+    }
+
+    @include media('<=tablet-l') {
+      max-width: 700px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 30px;
+    }
+  }
+
+
+  // Feature Box #
+  // -------------------------------
+  @include media('>tablet-l') {
+    .feature-box-1 {
+      .icon-cirle {
+        top: 66%;
+        left: 38%;
+      }
+
+      .line {
+        top: 75%;
+        left: -18%;
+        height: 7%;
+        width: 60%;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+      }
+
+      .feature-text-wrap {
+        top: 21%;
+        left: -53%;
+      }
+    }
+
+    .feature-box-2 {
+      .icon-cirle {
+        top: 30%;
+        left: 21%;
+      }
+
+      .line {
+        top: 23%;
+        left: -15%;
+        height: 7%;
+        width: 40%;
+        border-right-width: 1px;
+        border-top-width: 1px;
+      }
+
+      .feature-text-wrap {
+        top: 80%;
+        left: -53%;
+      }
+    }
+
+    .feature-box-3 {
+      .icon-cirle {
+        top: 8%;
+        left: 47%;
+      }
+
+      .line {
+        top: 17%;
+        left: 43%;
+        height: 77%;
+        width: 8%;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+      }
+
+      .feature-text-wrap {
+        top: 91.5%;
+        left: 19%;
+      }
+    }
+  }
+
+
+  // Feature Text Wrap
+  // -------------------------------
+  .feature-text-wrap {
+    @include media('>tablet-l') {
+      position: absolute;
+      width: 53%;
+      max-width: 350px;
+      z-index: 5;
+    }
+
+    @include media('<=tablet-l') {
+      position: relative;
+    }
+
+    // Text Right Class
+    &.text-right {
+      @include cf();
+
+      > * {
+        @include media('>tablet-l') {
+          text-align: right;
+          float: right;
+        }
+      }
+    }
+
+    p {
+      color: $text-gray2;
+      margin: 0 0 15px;
+    }
+  }
+
+
+  // Feature Title
+  // -------------------------------
+  .feature-title {
+    color: $black;
+    background: $white;
+    display: inline-block;
+    font-weight: 600;
+    position: relative;
+
+    @include media('>tablet-l') {
+      &:before {
+        content: '';
+        position: absolute;
+        right: -25px;
+        top: 0;
+        width: 25px;
+        height: 100%;
+        background: $white;
+      }
+    }
+
+    @include media('<=tablet-l') {
+      padding-top: 5px;
+    }
+  }
+
+  // Icon Circle
+  // -------------------------------
+  .icon-cirle {
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgba($blue, 0.9);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+
+    @include media('>tablet-l') {
+      position: absolute;
+      width: 8%;
+
+      &:before {
+        content: '';
+        display: table;
+        padding-top: 100%;
+      }
+    }
+
+    @include media('<=tablet-l') {
+      width: 60px;
+      height: 60px;
+      left: 0;
+    }
+
+    // SVG
+    // -------------------------------
+    svg {
+      @include align(both);
+      width: 45%;
+      height: 45%;
+
+      * {
+        stroke: $white;
+      }
+    }
+  }
+}
+
+
+
+// ============================================================================
+//  Help Button
+// ============================================================================
+.prod-helpbtn-sec {
+  @include cf();
+  padding: 60px 5%;
+  border-bottom: 1px solid $border-gray;
+  position: relative;
+  overflow: hidden;
+
+  .feature-listing-wrap {
+    @include cf();
+    margin-top: 70px;
+
+    @include media('<=tablet-l') {
+      margin-top: 30px;
+    }
+  }
+
+  .img-col {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+
+    @include media('<=tablet-l') {
+      width: 60%;
+    }
+
+    @include media('<=tablet-l') {
+      position: relative;
+      width: 80%;
+    }
+
+    @include media('<=mobile-l') {
+      width: 100%;
+    }
+
+    img {
+      max-width: 700px;
+      width: 100%;
+
+      @include media('<=tablet-l') {
+        position: relative;
+        left: -7%;
+      }
+    }
+
+    .white-gradient {
+      display: none;
+
+      @include media('<=tablet-l') {
+        display: block;
+        position: absolute;
+        left: -7%;
+        top: 0;
+        width: 110%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%);
+      }
+    }
+  }
+
+  .text-col {
+    width: 48%;
+    float: right;
+
+    @include media('<=tablet-l') {
+      width: 100%;
+    }
+  }
+
+  .feature-box {
+    padding-left: 80px;
+    position: relative;
+    margin-bottom: 50px;
+
+    @include media('<=tablet-l') {
+      padding-left: 0;
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 50px;
+      border-bottom: solid 1px $border-gray;
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      color: $text-gray2;
+    }
+  }
+
+  .icon-circle {
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    background-color: $blue;
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include media('<=tablet-l') {
+      position: relative;
+    }
+  }
+
+  .feature-title {
+    padding-top: 0;
+    font-weight: 500;
+  }
+
+  div.prod-sec-heading {
+    h3 {
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+
+// ============================================================================
+//  Automatic Fall Detection
+// ============================================================================
+.prod-auto-fall-sec {
+  @include cf();
+  padding: 40px 0 60px;
+  border-bottom: 1px solid $border-gray;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+
+  .col-text {
+    width: 50%;
+    padding-left: 8%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    @include media('<=tablet') {
+      width: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  .col-img {
+    width: 50%;
+
+    @include media('<=tablet') {
+      width: 100%;
+    }
+
+    img { width: 100%; }
+  }
+
+  .prod-sec-heading {
+    .heading, p {
+      text-align: left;
+
+      @include media('<=tablet') {
+        text-align: center;
+        display: table;
+        margin: 0 auto;
+      }
+    }
+
+    .heading {
+      margin-bottom: 35px;
+      max-width: 390px;
+      line-height: 1.3em;
+    }
+
+    p {
+      color: $text-gray2;
+
+      @include media('<=tablet') {
+        max-width: 550px;
+      }
+    }
+  }
+
+  .btn-outline {
+    margin-top: 50px;
+    border-width: 3px;
+    padding: 15px 40px;
+
+    @include media('<=tablet') {
+      display: table;
+      margin: 50px auto 0;
+    }
+  }
+}
+
+
+
+// ============================================================================
+//  Accessories
+// ============================================================================
+.prod-accessories-sec {
+  padding: 30px 5% 50px;
+  border-bottom: 1px solid $border-gray;
+  border-top: 1px solid $border-gray;
+  position: relative;
+
+  .cols-wrap {
+    @include cf();
+    margin: 50px 0;
+  }
+
+  div.inner-max-container {
+    div.prod-sec-heading {
+      padding: 50px 0 0;
+    }
+  }
+
+  .col {
+    @include col(1/3, $gutter: 5);
+
+    @include media('<=tablet') {
+      @include stack();
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 250px;
+      width: 100%;
+    }
+
+    .col-title, p {
+      text-align: center;
+
+      @include media('<=tablet') {
+        max-width: 300px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .col-title {
+      color: $black;
+      font-weight: 600;
+
+      @include media('<=tablet') {
+        margin-top: 0;
+      }
+    }
+
+    p {
+      color: $text-gray2;
+
+      @include media('>tablet-l') {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .ctabtn {
+    border-width: 3px;
+    padding: 15px 50px;
+    display: table;
+    margin:  0 auto 50px;
+
+    @include media('<tablet-l') {
+      margin: 0 auto 10px;
+    }
+  }
+}
+
+.accessories-2col {
+  .cols-wrap {
+    display: flex;
+    margin: 50px 0;
+
+    @include media('>=tablet-l') {
+      align-items: center;
+    }
+
+    @include media('<tablet-l') {
+      flex-direction: column;
+    }
+  }
+
+  div.accessories-img,
+  article {
+    flex: 1;
+  }
+
+  .col {
+    @include media('<tablet-l') {
+      width: 100%;
+    }
+  }
+
+  .col .col-title,
+  .col p {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  h3 {
+    margin-bottom: 3px;
+  }
+
+  h6 {
+    margin-bottom: 3px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 21px;
+  }
+
+  div.accessories-img {
+    @include media('>=tablet-l') {
+      margin-right: 2%;
+    }
+
+    figure {
+      @include ratio-box-old(1/1);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+
+  .ctabtn {
+    border-width: 3px;
+    padding: 15px 50px;
+    display: table;
+    margin: 25px 0 0 0;
+  }
+}
+
+// ============================================================================
+//  Spouse Section
+// ============================================================================
+.prod-spouse-sec {
+  position: relative;
+  border-bottom: 1px solid $border-gray;
+
+  .big-img {
+    @include ratio-box(1/0.55);
+    @include cover();
+  }
+
+  .text-box {
+    background: $white;
+    border-radius: 5px;
+    max-width: 390px;
+    width: 100%;
+    padding: 60px 40px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include media('<=tablet-l') {
+      right: 5%;
+      padding: 35px 30px 40px;
+    }
+
+    @include media('<=tablet-m') {
+      position: static;
+      padding: 50px 5%;
+      transform: none;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+  }
+
+  .prod-sec-heading {
+    .heading,
+    .copy p {
+      text-align: left;
+
+      @include media('<=tablet-m') {
+        text-align: center;
+      }
+    }
+
+    .heading {
+      max-width: 250px;
+
+      @include media('<=tablet-m') {
+        max-width: 550px;
+        margin: 0 auto 30px;
+      }
+    }
+
+    .copy p {
+      font-size: rem(16px);
+      color: $text-gray2;
+
+      @include media('<=tablet-m') {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .ctabtn {
+    margin-top: 35px;
+    border-color: $blue;
+    border-width: 3px;
+    padding: 15px 40px;
+
+    @include media('<=tablet-m') {
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      background: none;
+      color: $blue;
+    }
+  }
+}
+
+
+
+
+// ============================================================================
+//  Consultants Section
+// ============================================================================
+.prod-consultants-sec {
+  padding: 60px 5%;
+  position: relative;
+
+  .members-wrap {
+    @include cf();
+    margin: 80px 0 50px;
+
+    @include media('<=tablet') {
+      margin: 80px 0 0;
+    }
+  }
+
+  .member {
+    @include col(1/4, $gutter: 5, $cycle: 4);
+
+    @include media('<=tablet') {
+      @include col(1/2, $gutter: 5, $cycle: 2);
+      margin-bottom: 50px;
+    }
+
+    &:hover {
+      .mem-img {
+        box-shadow: inset 0 0 0 7px $blue;
+      }
+
+      @include media('>tablet-l') {
+        .mem-name {
+          margin-top: -30px;
+        }
+      }
+    }
+  }
+
+  .mem-img {
+    @include ratio-box(1/1);
+    @include cover();
+    max-width: 182px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 0 $blue;
+    transition: box-shadow 0.3s;
+  }
+
+  .caption-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 48px;
+  }
+
+  .mem-more,
+  .mem-name {
+    color: $blue;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+
+  .content-text p {
+    color: $text-gray2;
+    text-align: center;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ctabtn {
+    border-width: 3px;
+    padding: 15px 40px;
+    display: table;
+    margin: 45px auto 20px;
+  }
+}
+
+.prod-base-station {
+  padding: 50px $mobile-gutter;
+  position: relative;
+  border-bottom: 1px solid $border-gray;
+
+  .prod-sec-heading {
+    text-align: center;
+    padding-bottom: 95px;
+
+    h3 {
+      @include fluid-type(32px, 42px, 420px, 1024px);
+    }
+
+    h4 {
+      font-weight: 300;
+      line-height: 1.3em;
+    }
+
+    @include media('<tablet') {
+      padding-bottom: 5%;
+    }
+  }
+
+  figure {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 209px;
+    left: -40px;
+    background-size: 53%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    &:last-of-type {
+      display: none;
+
+      @include media('<1080px') {
+        display: block;
+      }
+    }
+
+    &:first-of-type {
+      @include media('<1080px') {
+        display: none;
+      }
+
+      @include media('<1280px') {
+        top: 210px;
+      }
+    }
+
+    @include media('<1080px') {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      top: 0;
+      left: 0;
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+}
+
+.base-station-copy {
+  display: flex;
+  z-index: 2;
+  position: relative;
+
+  @include media('>=1080px') {
+    justify-content: space-between;
+  }
+
+  @include media('<1080px') {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  > div {
+    // @include media('<1340px') {
+    //   width: 24%;
+    // }
+
+    @include media('>1080px') {
+      width: 24%;
+      margin-top: 1.5%;
+    }
+
+    @include media('<1080px') {
+      width: auto;
+      max-width: 750px;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+
+  > div:last-child {
+    @include media('>=1080px') {
+      text-align: right;
+    }
+  }
+
+  > div:first-child {
+    padding-top: 2%;
+  }
+
+  h6 {
+    font-weight: bold;
+  }
+
+  p {
+    font-weight: 300;
+    color: $text-gray2;
+
+    @include media('>=1080px') {
+      //max-width: 265px;
+    }
+
+    @include media('<1080px') {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+
+    @include media('<mobile-l') {
+      max-width: 100%;
+    }
+  }
+}
+
+.station-copy-bottom {
+  position: relative;
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+  z-index: 2;
+
+  @include media('>=max-site-width') {
+    padding-top: 10%;
+  }
+
+  @include media('<max-site-width') {
+    padding-top: 6vw;
+  }
+
+  @include media('<1209px') {
+    padding-top: 0vw;
+  }
+
+  h6 {
+    font-weight: bold;
+  }
+
+  p {
+    font-weight: 300;
+    color: $text-gray2;
+
+    @include media('<1080px') {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+
+    @include media('<mobile-l') {
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+// ============================================================================
+//  Product Module Post Type:
+// ============================================================================
+.prod-module-cellular {
+  padding: 0 0 0 6.3%;
+  position: relative;
+  border-bottom: 1px solid $border-gray;
+
+  @include media('<tablet') {
+    padding: 0 5% 60px 6%;
+  }
+
+  img { width: 100%; }
+
+  .container-wrap {
+    @include cf();
+
+    @include media('>tablet') {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: stretch;
+
+      &.no-map {
+        align-items: center;
+
+        // ul,
+        // .map-coverage {
+        //   display: none;
+        // }
+      }
+    }
+  }
+
+  // Col Text
+  //===========================================
+  .col-text {
+    width: 40%;
+    padding: 5% 0;
+
+    @include media('<=tablet') {
+      width: 100%;
+      padding: 0;
+    }
+
+    h3 {
+      color: $black;
+      font-size: 33px;
+      line-height: 1.3em;
+    }
+
+    ul {
+      margin: 50px 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: rem(18px);
+      margin-bottom: 15px;
+    }
+  }
+
+
+  .lm-btn {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  // Col Image
+  //===========================================
+  .col-img {
+    width: 60%;
+
+    @include media('>tablet') {
+      padding-left: 3%;
+    }
+
+    @include media('<=tablet') {
+      width: 100%;
+    }
+  }
+
+  // Product Image
+  //===========================================
+  .prod-img {
+    width: 100%;
+  }
+
+  // Map Coverage
+  //===========================================
+  .map-coverage {
+    @include cf();
+    display: table;
+    width: 100%;
+    border: 1px solid $border-gray2;
+    margin-bottom: 80px;
+
+    @include media('<tablet') {
+      margin-bottom: 0;
+    }
+  }
+
+  .map-col,
+  .map-text-col {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .map-text-col {
+    padding: 6% 3%;
+
+    p, a {
+      font-size: rem(14px);
+      line-height: 1.2em;
+    }
+
+    a {
+      color: $text-gray;
+      margin-top: 15px;
+      display: inline-block;
+    }
+  }
+}

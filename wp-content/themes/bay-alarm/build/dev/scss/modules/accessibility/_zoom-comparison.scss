@@ -1,0 +1,247 @@
+html.zoom-squish-400,
+html.fontsize,
+html.zoom-squish-ultra {
+
+  body.comparison.contrast {
+
+    .compare-hero {
+      h1,
+      p {
+        color: #fff;
+      }
+
+    } // .compare-hero
+
+    .pricing-compare {
+      .border-box {
+        z-index: 0;
+      } // .border-box
+    } // .pricing-compare
+
+    .compare-col {
+      p,
+      li,
+      em {
+        color: inherit;
+      }
+    } // .compare-col
+
+    .compare-bottom {
+
+      .btn-outline.white {
+        color: #fff;
+      }
+
+      .btn-outline.white {
+        border-color: #fff;
+      }
+    } // .compare-bottom
+
+  } // body.comparison.contrast
+
+  body.comparison {
+
+    .compare-hero {
+      background-image: none !important;
+      h1,
+      p {
+        color: #000;
+      }
+
+      .center-all {
+        max-width: 875px;
+        width: 80%;
+      } // .center-all
+
+    } // .compare-hero
+
+    .pricing-compare {
+
+      .inner-max-container {
+        max-width: 100%;
+
+        .frame-border,
+        .col-view-box .border-box {
+          height: calc(100% - 80px) !important;
+        }
+
+        .table-order-btn {
+          bottom: -76px;
+        }
+      } // .inner-max-container
+
+      .col-view-box {
+
+        .cell {
+          &:first-child {
+            height: 192px;
+          }
+          .text-wrap {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+          } // .text-wrap
+        } // .cell
+
+      } // .col-view-box
+    } // .pricing-compare
+
+    .compare-col {
+      p,
+      li,
+      em {
+        color: #000;
+      }
+    } // .compare-col
+
+    .compare-bottom {
+      background-image: none !important;
+      h3,
+      p,
+      strong,
+      .btn-outline.white {
+        color: #000;
+      }
+
+      .btn-outline.white {
+        border-color: #000;
+      }
+
+      article {
+        max-width: 100%;
+      }
+    } // .compare-bottom
+
+  } // body.comparison
+
+} // html.zoom-squish-400, html.fontsize
+
+html.fontsize {
+
+  body.comparison {
+    .compare-hero {
+      padding-top: 200px;
+    } // .compare-hero
+
+  } // body.comparison
+
+} // html.fontsize
+
+html.zoom-squish-400 {
+
+  body.comparison {
+
+    .compare-col {
+      img {
+        max-width: 50%;
+      }
+    }
+
+    .compare-bottom,
+    .pricing-compare {
+      padding-top: 0;
+    } // .pricing-compare
+
+  } // body.comparison
+
+} // html.zoom-squish-400
+
+body.comparison.contrast {
+
+  .pricing-compare {
+    .border-box {
+      z-index: 0;
+    } // .border-box
+  } // .pricing-compare
+
+} // body.comparison.contrast
+
+html.zoom-squish-ultra {
+
+  body.comparison {
+
+    #main-page-body {
+
+      * {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+        }
+        p,
+        span,
+        ul li,
+        p *,
+        .btn-outline {
+          font-size: 10px !important;
+        }
+        a {
+          * {
+            text-decoration: underline
+          }
+          &:hover {
+            * {
+              text-decoration: none;
+            }
+          }
+        }
+        img {
+          display: none;
+        }
+        figure {
+          background-image: none !important;
+          background-color: #fff;
+        }
+      } // *
+
+    } // #main-page-body
+
+    .compare-hero,
+    .pricing-compare {
+
+      padding-top: 0;
+      padding-bottom: 0;
+
+    } // .compare-hero, .pricing-compare
+
+    .pricing-compare {
+      svg {
+        max-width: 63%;
+      }
+
+      span.superscript {
+        top: -2px;
+        left: 2px;
+      }
+    } // .pricing-compare
+
+    .compare-col,
+    .compare-bottom {
+      padding: 20px 0;
+      max-width: 75%;
+      margin: auto;
+    } // .compare-col, .compare-bottom
+
+
+    .compare-bottom {
+
+      h3.old-h2.howMuchCanYouSave.no-h3 {
+        margin-top: 12px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        &:last-of-type {
+          padding-bottom: 20px;
+        }
+      }
+
+    } // .compare-bottom
+
+  } // body.comparison
+
+} // html.zoom-squish-ultra

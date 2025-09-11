@@ -1,0 +1,185 @@
+body.scholarship {
+  .text-box {
+    left: $mobile-gutter;
+    max-width: 500px;
+
+    h1 {
+      margin-bottom: 25px;
+    }
+
+    p {
+      max-width: 424px;
+      font-size: 18px;
+      color: $white;
+    }
+
+    @include media('<=tablet-l') {
+      max-width: 100%;
+      left: 0;
+      margin-top: 0;
+      padding: 5% 7%;
+
+      h1.heading {
+        text-align: left;
+        max-width: 100%;
+      }
+
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .submit-info-wrap,
+  .additional-info {
+    @include cf();
+    padding: $mobile-gutter;
+
+    h3 {
+      color: $black;
+    }
+  }
+
+  section.home-hero {
+    figure.hero-img {
+      background-position: center;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: -moz-linear-gradient(left,  rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        background: -webkit-linear-gradient(left,  rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(to right,  rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+
+      }
+    }
+
+    @include media('<=tablet-l') {
+      max-height: inherit;
+      height: inherit;
+
+      figure.hero-img {
+        @include ratio-box(16/9);
+        display: block;
+        background-position: right center;
+
+        &:after {
+          background: none;
+        }
+      }
+
+      article.text-box {
+        max-width: 100%;
+        left: 0;
+        top: 0;
+        padding: 5% 7%;
+      }
+    }
+  }
+}
+
+.submit-info-wrap {
+  background-color: $light-gray;
+
+  p, li {
+    color: $text-gray2;
+  }
+
+  a {
+    color: $blue;
+  }
+}
+
+.submit-info,
+.additional-info {
+  ul {
+    padding-left: 17px;
+  }
+
+  li {
+    margin-bottom: 17px;
+
+    span.space-it {
+      display: block;
+      padding: 10px 0;
+    }
+  }
+
+  a {
+    color: $blue;
+  }
+
+  .btn {
+    margin-right: 10px;
+    background-color: transparent;
+    border: 2px solid $blue;
+    margin-bottom: 10px;
+  }
+}
+
+.submit-info {
+  @include media('<tablet-l') {
+    margin-bottom: 30px;
+  }
+}
+
+.scholarship-split {
+  @include col(1/2);
+
+  @include media('<tablet-l') {
+    @include stack();
+
+    &:first-child {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba($black, .15);
+    }
+
+    &:last-child {
+      padding-left: 0;
+      border-left: none;
+    }
+  }
+}
+
+.submit-images {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 15px solid $white;
+
+  li {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  li:first-child {
+    @include ratio-box(4/2.5);
+    width: 100%;
+    float: left;
+    border-bottom: 7.5px solid $white;
+  }
+
+  li:not(:first-child) {
+    @include ratio-box(16/9);
+    width: 50%;
+    float: left;
+
+    &:nth-child(even) {
+      border-right: 3.75px solid $white;
+    }
+
+    &:nth-child(odd) {
+      border-left: 3.75px solid $white;
+    }
+  }
+}
+
+.add-info-right {
+  padding-left: 3%;
+  border-left: 1px solid rgba($black, .15);
+}

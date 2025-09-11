@@ -1,0 +1,56 @@
+
+
+// Content Blog Rail/Aside Styling
+
+aside.blog-rail {
+  padding-bottom: 35px;
+
+
+  div {
+    margin-bottom: rem(50px);
+    text-align: center;
+    border: solid 1px $border-gray;
+    max-width: 300px;
+
+    &.fb-page {
+      margin-bottom: 0;
+    }
+  }
+
+  .blog-rail--col {
+    position: sticky;
+    top: 20px;
+    max-width: 100%;
+    border: none;
+  }
+
+
+  figure {
+    @include ratio-box(16/9);
+    @include cover();
+  }
+
+  h6 {
+    h6 { @include fluid-type(18px, 19px, 420px, 1024px); }
+    font-weight: $text-thin;
+    margin-top: rem(14px);
+    margin-bottom: rem(14px);
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.42em;
+    color: $text-gray2;
+    letter-spacing: 0;
+    padding: 6% 10%;
+  }
+
+  button {
+    margin-bottom: 10%;
+  }
+
+}
+
+.fb-page, .fb-page iframe[style], .fb-page span {
+    width: 100% !important;
+}

@@ -1,0 +1,81 @@
+.error--sec {
+	background-color: #F2EFEA;
+	padding: 90px 0;
+
+	@include media('<mobile-l') {
+		padding: 60px 0;
+	}
+	
+	h1 {
+		font-size: 36px;
+		font-weight: 800;
+		color: $dark-blue;
+		margin-bottom: 20px;
+		line-height: 100%;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	article {
+		width: 47%;
+
+		@include media('<mobile-l') {
+			width: 100%;
+		}
+
+		span {
+			font-weight: 700;
+			color: $dark-gray4;
+			letter-spacing: 0.3em;
+			font-size: 18px;
+
+		}
+
+		p {
+			font-size: 20px;
+			font-weight: 500;
+			color: $dark-gray4;
+			margin-bottom: 25px;
+			line-height: 33px;
+		}
+
+		.btn {
+			background-color: #DB4E3B;
+			color: $white;
+			text-transform: capitalize;
+			border: 2px solid #DB4E3B;
+			border-radius: 10px;
+			padding: 18px 40px;
+			font-size: 20px;
+			min-width: 254px;
+			margiin-top: 30px;
+
+			@include media('<mobile-l') {
+				min-width: 100%;
+				width: 100%;
+			}
+
+			&:hover {
+				color: #DB4E3B;
+				background-color: transparent;
+			}
+		}
+	}
+
+	.img-wrap {
+		width: 49%;
+
+		@include media('<mobile-l') {
+			width: 100%;
+			margin-top: 55px;
+		}
+	}
+}
+
+
+

@@ -1,0 +1,535 @@
+html.zoom-squish-400,
+html.zoom-squish-ultra,
+html.fontsize {
+
+  body.b2b.contrast {
+
+    .b2b-hero {
+
+      .hero-info {
+        h1,
+        h2 {
+          color: inherit;
+        }
+
+        a.btn {
+          color: inherit;
+          border-color: inherit;
+        } // a.btn
+
+      } // .hero-info
+    } // .b2b-hero
+
+    .b2b-opportunities {
+
+      .b2b-opportunity {
+
+        a.btn {
+          color: inherit;
+          border-color: inherit;
+        } // a.btn
+
+      } // .b2b-opportunity
+
+    } // .b2b-opportunities
+
+    .our-b2b-products.b2b-section {
+
+      .b2b-products-container {
+
+        .b2b-product-card {
+
+          a.btn {
+            border-color: inherit;
+            color: inherit;
+          } // a.btn
+
+        } // .b2b-product-card
+
+      } // .b2b-products-container
+
+    } // .our-b2b-products.b2b-section
+
+    .b2b-leading-where-it-matters.b2b-section {
+
+      .b2b-leading {
+
+        h3 {
+          color: inherit;
+        }
+
+      } // .b2b-leading
+
+    } // .b2b-leading-where-it-matters.b2b-section
+
+
+  } // body.b2b.contrast
+
+  body.b2b {
+
+    .b2b-hero {
+      background-image: none !important;
+      padding-top: 120px;
+      padding-bottom: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .hero-info {
+        padding: 0;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a.btn {
+          border: 2px solid #000;
+          color: #000;
+          padding: 20px 60px;
+        } // a.btn
+
+        h1,
+        h2 {
+          text-align: center;
+          color: #000;
+        }
+      } // .hero-info
+    } // .b2b-hero
+
+    .b2b-opportunities {
+
+      .b2b-opportunity {
+
+        a.btn {
+          color: #000;
+          border-color: #000;
+        } // a.btn
+
+      } // .b2b-opportunity
+
+    } // .b2b-opportunities
+
+    .our-b2b-products.b2b-section {
+
+      .b2b-products-container {
+
+        .b2b-product-card {
+
+          .b2b-prodiuct-info {
+
+            img {
+              display: none;
+            }
+
+          } // .b2b-prodiuct-info
+
+          a.btn {
+            border-color: #000;
+            color: #000;
+          } // a.btn
+
+        } // .b2b-product-card
+
+      } // .b2b-products-container
+
+    } // .our-b2b-products.b2b-section
+
+    .b2b-why-lifestation.b2b-section {
+
+      .why-lifestation-container {
+
+        .why-lifestation-card {
+          padding-top: 40px;
+          padding-bottom: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          figure {
+            display: none;
+          } // figure
+
+          .why-lifestation-info {
+            max-width: 75%;
+            margin: auto;
+            text-align: center;
+          } // .why-lifestation-info
+
+        } // .why-lifestation-card
+
+
+      } // .why-lifestation-container
+
+    } // .b2b-why-lifestation.b2b-section
+
+    .b2b-our-innovations.b2b-section {
+
+      .our-innovations-container {
+
+        .b2b-innovation {
+          padding: 30px;
+          img {
+            display: none;
+          }
+        } // .b2b-innovation
+
+      } // .our-innovations-container
+
+    } // .b2b-our-innovations.b2b-section
+
+    .b2b-leading-where-it-matters.b2b-section {
+
+      padding: 40px;
+
+      header {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      } // header
+
+      .leading-where-it-matters-container {
+        max-width: 75%;
+      } // .leading-where-it-matters-container
+
+      .b2b-leading {
+
+        img {
+          display: none;
+        }
+
+        h3 {
+          margin: 0;
+          color: #000;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      } // .b2b-leading
+
+    } // .b2b-leading-where-it-matters.b2b-section
+
+    .b2b-interest-form.b2b-section {
+
+      .b2b-interest-form-container {
+
+        .form-field-contain {
+
+          small {
+            padding: 30px;
+          } // small
+
+        } // .form-field-contain
+
+      } // .b2b-interest-form-container
+
+    } // .b2b-interest-form.b2b-section
+
+  } // body.b2b
+
+} // html.zoom-squish-400, html.fontsize
+
+html.fontsize {
+
+  body.b2b {
+
+    .b2b-hero {
+      h2,
+      a.btn {
+        font-size: inherit;
+      }
+    } // .b2b-hero
+
+    .our-opportunities.b2b-section {
+
+      header {
+        h2 {
+          font-size: inherit;
+          line-height: inherit;
+        }
+      } // header
+
+      .b2b-opportunities {
+
+        .b2b-opportunity {
+          padding: 30px;
+          &-info {
+            h3 {
+              font-size: inherit;
+            }
+            p {
+              font-size: 23px;
+              line-height: inherit;
+            }
+          } // &-info
+
+        } // .b2b-opportunity
+
+      } // .b2b-opportunities
+
+    } // .our-opportunities.b2b-section
+
+    .our-b2b-products.b2b-section {
+
+      header {
+        h2 {
+          font-size: inherit;
+          line-height: inherit;
+        }
+      } // header
+
+      .b2b-products-container {
+
+        .b2b-product-card {
+          padding: 40px;
+
+          .b2b-prodiuct-info {
+            h3 {
+              font-size: inherit;
+            }
+
+            p {
+              font-size: 23px;
+              line-height: inherit;
+            }
+          } // .b2b-prodiuct-info
+
+        } // .b2b-product-card
+
+      } // .b2b-products-container
+
+    } // .our-b2b-products.b2b-section
+
+    .b2b-why-lifestation.b2b-section {
+
+      header {
+        h2 {
+          font-size: inherit;
+          line-height: inherit;
+        }
+      } // header
+
+      .why-lifestation-info {
+        h3,
+        h4 {
+          font-size: inherit;
+        }
+        p {
+          font-size: 23px;
+        }
+
+        h3,
+        h4,
+        p {
+          line-height: inherit;
+        }
+      } // .why-lifestation-info
+
+    } // .b2b-why-lifestation.b2b-section
+
+    .b2b-our-innovations.b2b-section {
+
+      header {
+        h2 {
+          font-size: inherit;
+          line-height: inherit;
+        }
+      } // header
+
+      .our-innovations-container {
+
+        .b2b-innovation {
+          h3 {
+            font-size: inherit;
+            line-height: inherit;
+          }
+          p {
+            font-size: 19px;
+          }
+        } // .b2b-innovation
+
+      } // .our-innovations-container
+
+    } // .b2b-our-innovations.b2b-section
+
+    .b2b-leading-where-it-matters.b2b-section {
+
+      header {
+        h2 {
+          font-size: inherit;
+          line-height: inherit;
+        }
+      } // header
+
+      .b2b-leading {
+        h3 {
+          font-size: inherit;
+          line-height: inherit;
+        }
+      } // .b2b-leading
+
+    } // .b2b-leading-where-it-matters.b2b-section
+
+    .b2b-interest-form.b2b-section {
+
+      .b2b-interest-form-content {
+        p {
+          font-size: 23px;
+          line-height: inherit;
+        }
+      } // .b2b-interest-form-content
+
+      .b2b-interest-form-container {
+
+        .form-field-contain {
+
+          small {
+            font-size: 18px;
+            line-height: inherit;
+          } // small
+
+        } // .form-field-contain
+
+      } // .b2b-interest-form-container
+
+    } // .b2b-interest-form.b2b-section
+
+  } // body.b2b
+
+} // html.fontsize
+
+html.zoom-squish-400 {
+
+  body.b2b {
+
+    .b2b-hero {
+      padding-top: 50px;
+    }
+
+    .b2b-contact-us.b2b-section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      max-width: 90%;
+      background: none;
+      margin: auto;
+
+      h2 {
+        color: #000;
+      }
+    } // .b2b-contact-us.b2b-section
+
+    .b2b-interest-form.b2b-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 90%;
+      margin: auto;
+
+      .b2b-interest-form-content {
+        h1 {
+          margin-bottom: 0;
+        }
+        p {
+          margin-bottom: 60px;
+        }
+      } // .b2b-interest-form-content
+
+    } // .b2b-interest-form.b2b-section
+
+  } // body.b2b
+
+} // html.zoom-squish-400
+
+//===**contrast-only styles**===//
+// body.b2b.contrast {
+//
+// } // body.b2b.contrast
+
+html.zoom-squish-ultra {
+
+  body.b2b {
+    #main-page-body {
+
+      * {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+        }
+        p {
+          font-size: 10px !important;
+        }
+        a {
+          * {
+            text-decoration: underline
+          }
+          &:hover {
+            * {
+              text-decoration: none;
+            }
+          }
+        }
+        img {
+          display: none;
+        }
+        figure {
+          background-image: none !important;
+          background-color: #fff;
+        }
+      } // *
+      
+    } // #main-page-body
+
+    .b2b-hero {
+
+      padding-top: 0;
+
+      .hero-info {
+        background-color: #fff;
+      } // .hero-info
+
+    } // .b2b-hero
+
+    .our-partners.b2b-section,
+    .our-opportunities.b2b-section,
+    .b2b-contact-us.b2b-section,
+    .our-b2b-products.b2b-section,
+    .b2b-why-lifestation.b2b-section,
+    .b2b-our-innovations.b2b-section,
+    .b2b-leading-where-it-matters.b2b-section,
+    .b2b-interest-form.b2b-section {
+
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+    } // .our-partners.b2b-section
+
+
+    .our-partners.b2b-section {
+
+      .slick-slide {
+        img {
+          display: block !important;
+        }
+      }
+
+    } // .our-partners.b2b-section
+
+    .b2b-why-lifestation.b2b-section {
+
+      .why-lifestation-card {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+
+    } // .b2b-why-lifestation.b2b-section
+
+  } // body.b2b
+
+} // html.zoom-squish-ultra

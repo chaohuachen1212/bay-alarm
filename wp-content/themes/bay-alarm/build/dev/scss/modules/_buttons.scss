@@ -1,0 +1,287 @@
+// edit per project, natch
+
+.btn,
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+  @include button($primary-button);
+}
+
+@mixin button-outline($color: $black) {
+  padding: 10px 40px;
+  border-radius: 50px;
+  background-color: $white;
+  color: $color;
+  cursor: pointer;
+  line-height: 1em;
+  letter-spacing: $tight-spacing;
+  font-size: rem(13px);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 2px solid $color;
+  transition: all .25s ease;
+
+  &:hover {
+    background-color: $color;
+    color: $white;
+  }
+}
+
+@mixin button($color: $black) {
+  padding: 10px 40px;
+  border-radius: 50px;
+  background-color: $dark-blue;
+  color: $white;
+  cursor: pointer;
+  line-height: 1em;
+  letter-spacing: $tight-spacing;
+  font-size: rem(13px);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 2px solid $color;
+  transition: all .25s ease;
+
+  &:hover {
+    background-color: $white;
+    * { color: $dark-blue; }
+  }
+}
+
+
+// Button Solid
+// ===================================================
+.btn {
+  @include button();
+}
+
+.btn.red {
+  background-color: $bam-red;
+  color: $white;
+  text-transform: capitalize;
+  border: 2px solid $bam-red;
+  border-radius: 10px;
+  padding: 18px 40px;
+  font-size: 20px;
+
+  &:hover {
+    color: $bam-red;
+    background-color: transparent;
+  }
+}
+
+.btn.orange {
+  color: $white;
+  background: $orange;
+  border-color: $orange;
+
+  &:hover {
+    background-color: $white;
+    color: $orange; 
+  }
+}
+
+.btn.blue {
+  color: $white;
+  background: $blue;
+  border-color: $blue;
+
+  &:hover {
+    background-color: transparent;
+    color: $blue;
+  }
+
+  &.outline {
+    &:hover {
+      background-color: rgba($blue, 0);
+      color: $blue;
+    }
+  }
+}
+
+.btn.darkblue {
+  color: $white;
+  background: $dark-blue;
+  border-color: $dark-blue;
+
+  &:hover {
+    background-color: transparent;
+    color: $dark-blue;
+  }
+
+  &.outline {
+    &:hover {
+      background-color: rgba($dark-blue, 0);
+      color: $dark-blue;
+    }
+  }
+}
+
+.btn.black {
+  color: $white;
+  background: $black;
+
+  &:hover {
+    background-color: $white;
+    * { color: $black; }
+  }
+}
+
+.btn.btn-large {
+  font-size: rem(20px);
+  padding: 18px 90px;
+  white-space: nowrap;
+}
+
+.btn.no-caps {
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+// Button Outline
+// ===================================================
+.btn-outline {
+  @include button-outline();
+}
+
+
+.btn-outline.red {
+  color: $red;
+  border-color: $red;
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+}
+
+
+.btn-outline.blue {
+  color: $blue;
+  border-color: $blue;
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.btn-outline.darkblue {
+  color: $dark-blue;
+  border-color: $dark-blue;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $dark-blue;
+    color: $white;
+  }
+}
+
+
+.btn-outline.gray {
+  color: $dark-gray;
+  border-color: $dark-gray;
+
+  &:hover {
+    background-color: $dark-gray;
+    color: $white;
+  }
+}
+
+
+
+
+.btn-outline.white {
+  color: $white;
+  border-color: $white;
+  background-color: rgba(white, 0);
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+
+
+
+// Play Button With Image
+// ===================================================
+.play-button-w-img {
+  @include button();
+  color: $white;
+  border-color: $white;
+  background-color: rgba(white, 0);
+  padding: 26px 22px 26px 73px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 7px;
+  margin-bottom: 7px;
+
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+
+  .btn-img {
+    @include cover();
+    height: 100%;
+    width: 65px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .btn-play-icon {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 5px;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background: rgba($black, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    circle {
+      stroke-width: 2;
+      stroke: $white;
+    }
+
+    polygon {
+      fill: $white;
+    }
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $border-gray2;
+  margin-bottom: 65px;
+
+  &.padding-t {
+    padding-top: 65px;
+  }
+
+  &.padding-b {
+    padding-bottom: 65px;
+  }
+}

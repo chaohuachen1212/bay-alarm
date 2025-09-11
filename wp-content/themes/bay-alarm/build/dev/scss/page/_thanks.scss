@@ -1,0 +1,69 @@
+body.thanks,
+body.error {
+
+  section.home-hero {
+    background: #252422;
+
+    h1, h6 {
+      color: $white;
+      line-height: 1.3em;
+
+      @include media('<=tablet-l') {
+        text-align: center;
+      }
+    }
+
+    h1 {
+      font-size: rem(35px);
+      margin-bottom: 30px;
+
+      @include media('<=mobile-l') {
+        font-size: rem(30px);
+        line-height: 1.15em;
+      }
+    }
+
+    .hero-img-1 {
+      background-position: center center;
+    }
+
+    .text-box {
+      right: 5%;
+      max-width: 35%;
+
+      @include media('<=tablet-l') {
+        max-width: 650px;
+        margin: -25% auto 0;
+      }
+
+      @include media('<=mobile-l') {
+        padding: 5% 5% 15%;
+      }
+    }
+
+    .buttons-wrap {
+      margin-top: 40px;
+
+      @include media('<=mobile-l') {
+        position: static;
+        transform: none;
+      }
+    }
+
+    .btn {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: auto;
+      background-color: transparent;
+      border: 2px solid $white;
+      transition: all ease .3s;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,142 @@
+html.zoom-squish-400,
+html.fontsize,
+html.zoom-squish-ultra {
+
+  body.faq-page {
+
+    .faq-hero {
+
+      .container {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      .faq-hero-icon {
+        display: none;
+      } // .faq-hero-icon
+
+      .faq-nav {
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+    } // .faq-hero
+
+  } // body.faq-page
+
+} // html.zoom-squish-400, html.fontsize
+
+html.fontsize {
+
+  body.faq-page {
+    .faq-container {
+
+      .faq-block-title,
+      .faq-item .faq-toggle {
+        font-size: inherit;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+      }
+
+      .faq-content {
+        &-copy {
+          p,
+          ul li {
+            letter-spacing: 0;
+            @include media('>tablet') {
+              font-size: 23px;
+            }
+          }
+        }
+      } // .faq-content
+
+    } // .faq-container
+  } // body.faq-page
+
+} // html.fontsize
+
+// html.zoom-squish-400 {
+//
+//   body.faq-page {
+//
+//   } // body.faq-page
+//
+// } // html.zoom-squish-400
+
+body.faq-page.contrast {
+
+  .faq-hero {
+
+    .faq-hero-icon {
+      display: none;
+    } // .faq-hero-icon
+
+    .container {
+      .faq-nav {
+        a {
+          border: 2px solid #fff;
+        }
+      } // .faq-nav
+    } // .container
+
+  } // .faq-hero
+
+  .faq-container {
+    .faq-item {
+      border: 2px solid #fff;
+    }
+  } // .faq-container
+
+} // body.faq-page.contrast
+
+html.zoom-squish-ultra {
+
+  body.faq-page {
+
+    #main-page-body {
+      .faq-toggle {
+        font-size: inherit;
+      }
+      * {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+        }
+        p,
+        ul li {
+          font-size: 10px !important;
+        }
+        a {
+          * {
+            text-decoration: underline
+          }
+          &:hover {
+            * {
+              text-decoration: none;
+            }
+          }
+        }
+        ul {
+          li {
+            list-style-type: disc;
+            &::before {
+              display: none;
+            }
+          }
+        }
+      } // *
+
+    } // #main-page-body
+
+  } // body.faq-page
+
+} // html.zoom-squish-ultra

@@ -1,0 +1,13 @@
+<svg version="1.1" id="icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g>
+	<path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M16.5,23.5h-9
+		c0-2.5,2-6,4.5-6S16.5,21,16.5,23.5z"/>
+
+		<circle fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="12" cy="12.5" r="3"/>
+	<path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M6.7,17.3
+		c-2.9-2.9-2.9-7.7,0-10.6c2.9-2.9,7.7-2.9,10.6,0c2.9,2.9,2.9,7.7,0,10.6"/>
+	<path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.9,20.1
+		c-4.5-4.5-4.5-11.8,0-16.3c4.5-4.5,11.8-4.5,16.3,0c4.5,4.5,4.5,11.8,0,16.3"/>
+</g>
+</svg>

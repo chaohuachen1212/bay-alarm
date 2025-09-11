@@ -1,0 +1,53 @@
+// Animated Checkbox
+// ============================================================
+.checkbox-wrap {
+  position: relative;
+}
+
+input.animated-checkbox {
+  opacity: 0;
+  float: left;
+
+  &:checked + label {
+    background: $blue;
+    border-color: $blue;
+  }
+
+  &:checked + label .svg-checker-path {
+    opacity: 1;
+    stroke-dashoffset: 0;
+    stroke: $white;
+  }
+}
+
+.checkbox-label {
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+  border-radius: 5px;
+  display: inline-block;
+  background: white;
+  border: 2px solid $border-gray2;
+  transition: all 0.5s;
+}
+
+.checkbox-icon {
+  @include align(both);
+  width: 65%;
+  height: 65%;
+  display: block;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .svg-checker-path {
+    $curve: cubic-bezier(0.65, 0, 0.45, 1);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    transition: stroke-dashoffset 0.25s $curve;
+    transition-delay: 0.2s;
+  }
+}
