@@ -1,0 +1,388 @@
+.comparison-main {
+	.max-container {
+		max-width: 2800px;
+	}
+
+	.pricing-promo, .header-mega-wrap {
+		max-width: 2800px;
+	}
+
+	.header-stick--tabs .container {
+		max-width: 2800px;
+	}
+
+	header[role='banner'] .header-wrap {
+		max-width: 2800px;
+	}
+
+}
+
+.comparison-main--hero {
+	background-color: #F2EFEA;
+	padding: 50px 0;
+
+	.container {
+		max-width: 2000px;
+	}
+
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		@include media('<=tablet-m') {
+			flex-direction: column-reverse;
+		}
+	}
+
+	h1 {
+		font-size: 36px;
+		font-weight: 800;
+		margin-bottom: 35px;
+
+		@include media('<=tablet') {
+			font-size: 30px;
+			margin-bottom: 25px;
+		}
+
+		span {
+			color: $bam-red;
+		}
+	}
+
+	article {
+		width: 47%;
+
+		@include media('<=tablet-m') {
+			width: 100%;
+		}
+
+		p {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 33px;
+
+			@include media('<=tablet') {
+				font-size: 16px;
+			}
+		}
+	}
+
+	figure {
+		width: 47%;
+
+		@include media('<=tablet-m') {
+			width: 100%;
+			margin-top: 45px;
+		}
+
+	}
+}
+
+.comparison-main--brand {
+	padding: 110px 0 90px;
+
+	@include media('<=tablet') {
+		padding: 100px 0 80px;
+	}
+
+	h2 {
+		font-size: 36px;
+		color: $dark-blue;
+		font-weight: 800;
+		margin-bottom: 25px;
+		text-align: center;
+
+		@include media('<=tablet') {
+			font-size: 30px;
+		}
+	}
+
+	.nav-wrap {
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: 55px;
+		margin-left: auto;
+		margin-right: auto;
+
+		a {
+			color: $white;
+			font-size: 20px;
+			padding: 20px 30px;
+			background-color: $bam-red;
+			border-radius: 10px;
+			text-align: center;
+			margin-bottom: 25px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.35s;
+			margin-right: 25px;
+			width: calc(100% / 4 - 19px);
+
+			@include media('<=tablet-l') {
+				width: calc(100% / 3 - 17.5px);
+			}
+
+			@include media('<=tablet') {
+				width: calc(100% / 2 - 13.5px);
+			}
+
+
+			@include media('<=mobile-l') {
+				width: 100%;
+				margin-right: 0;
+			}
+
+
+			&:hover {
+				background-color: rgba(60, 58, 66, 1);
+				color: $white;
+			}
+
+			&:nth-child(4n) {
+				
+				@include media('>tablet-l') {
+					margin-right: 0px;
+				}
+			}
+
+			&:nth-child(3n) {
+				
+				@include media('<=tablet-l') {
+					margin-right: 0px;
+				}
+
+				@include media('<=tablet') {
+					margin-right: inherit;
+				}
+			}
+
+
+			&:nth-child(2n) {
+				@include media('<=tablet') {
+					margin-right: 0;
+				}
+			}
+
+			
+			
+		}
+	}
+}
+
+.comparison-main--table {
+	padding-bottom: 150px;
+	margin-top: 25px;
+
+	@include media('<=tablet') {
+		padding-bottom: 110px;
+	}
+
+	h2 {
+		font-size: 36px;
+		color: $dark-blue;
+		font-weight: 800;
+		margin-bottom: 25px;
+		text-align: center;
+
+		@include media('<=tablet') {
+			font-size: 30px;
+		}
+	}
+
+	.table {
+		border-radius: 20px;
+		border: 1px solid rgba(190, 190, 190, 1);
+		
+		margin-top: 55px;
+
+		.top-row {
+			background-color: $bam-red;
+			padding: 25px 40px;
+			overflow: hidden;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+
+			@include media('<=tablet') {
+				padding: 23px 15px;
+
+				svg {
+					width: 150px;
+				}
+			}
+		}
+
+		.row {
+			display: flex;
+
+			&:nth-child(odd) {
+				background-color: rgba(242, 239, 234, 1);
+			}
+
+			&:last-child {
+			 	border-bottom-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+			 }
+
+			.col {
+				padding: 25px 45px;
+
+				@include media('<=tablet') {
+					padding: 23px 15px;
+				}
+
+				&:first-child {
+					width: 310px;
+					position: relative;
+
+					@include media('<=tablet') {
+						width: 35%;
+						padding-right: 35px;
+					}
+
+					p {
+						font-weight: bold;
+					}
+				}
+
+				&:nth-child(2) {
+					width: calc(100% - 310px);
+					border-left: 1px solid rgba(190, 190, 190, 1);
+					display: flex;
+					align-items: center;
+
+					@include media('<=tablet') {
+						width: 65%;
+						flex-wrap: wrap;
+					}
+				}
+			}
+
+			.info-box {
+				position: absolute;
+				right: 25px;
+				top: 28px;
+          		cursor: pointer;
+
+          		@include media('<=tablet') {
+          			top: 20px;
+          			right: 15px;
+          		}
+
+          		svg {
+          			width: 24px;
+          			height: 24px;
+          		}
+
+          		&:hover {
+          			.non-active {
+          				display: none;
+          			}
+
+          			.active-icon {
+						display: block;
+					}
+
+					.info-copy {
+						display: block;
+					}
+          		}
+			}
+
+			img {
+				max-width: 116.33px;
+				margin-right: 20px;
+
+				@include media('<=tablet') {
+					max-width: 81px;
+				}
+			}
+
+			.active-icon {
+				display: none;
+			}
+
+			.info-copy {
+				width: 700px;
+				left: -160px;
+				top: 62px;
+				position: absolute;
+				display: none;
+
+				@include media('<=tablet-m') {
+					width: 300px;
+					left: -85px;
+				}
+
+
+				&:before {
+					content: '';
+				    position: absolute;
+				    width: 85px;
+				    height: 85px;
+				    background-color: $dark-blue;
+				    top: -13px;
+			        left: 129px;
+			        transform: rotate(45deg);
+
+			        @include media('<=tablet-m') {
+			        	left: 54px;
+			        }			
+				}
+
+				.inner-wrap {
+					background-color: $dark-blue;
+					padding: 45px 30px;
+					z-index: 15;
+					border-radius: 30px;
+					position: relative;
+
+					@include media('<=tablet') {
+						padding: 30px;
+					}
+				}
+
+				h3 {
+					font-size: 18px;
+					font-weight: bold;
+					color: $white;
+				}
+
+				p {
+					color: $white;
+					font-size: 16px;
+					line-height: 33px;
+
+					@include media('<=tablet-m') {
+						font-size: 12px;
+						line-height: 27px;
+					}
+				}
+			}
+		}
+
+		p {
+			font-size: 18px;
+			font-weight: 500;
+			margin: 0;
+			color: $dark-blue;
+			margin-right: 20px;
+
+			@include media('<=tablet') {
+				font-size: 12px;
+
+			}
+
+			@include media('<=mobile-l') {
+				&:first-child {
+					width :100%
+				}
+			}
+		}
+	}
+}

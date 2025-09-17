@@ -1,0 +1,482 @@
+.comparison-product {
+	.max-container {
+		max-width: 2800px;
+	}
+
+	.pricing-promo, .header-mega-wrap {
+		max-width: 2800px;
+	}
+
+	.header-stick--tabs .container {
+		max-width: 2800px;
+	}
+
+	header[role='banner'] .header-wrap {
+		max-width: 2800px;
+	}
+
+	.comparison-main--brand {
+		background-color: #F2EFEA;
+	}
+
+}
+
+
+.comparison-product--content {
+	padding: 110px 0 140px;
+
+	@include media('<=tablet-m') {
+		padding: 100px 0;
+	}
+
+	.desktop {
+		@include media('<=tablet-m') {
+			display: none;
+		}
+	}
+
+	.mobile {
+		display: none;
+
+		@include media('<=tablet-m') {
+			display: block;
+		}
+	}
+
+	h2 {
+		font-size: 30px;
+		color: $dark-blue;
+		font-weight: 800;
+		margin-bottom: 25px;
+		text-align: center;
+
+		@include media('<=tablet') {
+			font-size: 24px;
+			line-height: 100%;
+		}
+
+		span {
+			color: $bam-red;
+		}
+	}
+
+
+	.nav-wrap {
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: 45px;
+		border-bottom: 1px solid rgba(190, 190, 190, 1);
+
+
+		a {
+			color: $dark-blue;
+			font-size: 20px;
+			padding: 20px 30px;
+			background-color: $light-grey;
+			border-radius: 70px;
+			text-align: center;
+			min-width: 225px;
+			margin-bottom: 25px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: 0.35s;
+			margin-right: 25px;
+
+
+			@include media('>1440px') {
+				width: calc(100% / 5 - 20px);
+			}
+
+			@include media('<=mobile-l') {
+				width: 100%;
+				margin-right: 0;
+			}
+
+			&.is-active {
+				background-color: rgba(60, 58, 66, 1);
+				color: $white;
+			}
+
+			&:hover {
+				background-color: rgba(60, 58, 66, 1);
+				color: $white;
+			}
+
+			&:nth-child(5n) {
+				
+				@include media('>1440px') {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+
+	.table-sec {
+		.table {
+			padding-top: 130px;
+
+			@include media('<=tablet-m') {
+				padding-top: 80px;
+			}
+
+			&:first-child {
+				.row {
+					&:nth-child(odd) {
+						background-color: #F2EFEA;
+					}
+				}
+
+				.bottom-row {
+					.col {
+
+						&:first-child {
+							background-color: #F2EFEA;
+						}
+
+					}
+				}
+			}
+
+			h2 {
+				margin-bottom: 50px;
+			}
+
+			.check-wrap {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+
+				@include media('<=tablet-m') {
+					margin: 0 auto;
+					display: block;
+				}
+
+				svg {
+					margin-right: 35px;
+
+					@include media('<=tablet-m') {
+						margin-bottom: 5px;
+						margin-left: auto;
+						margin-right: auto;
+						display: block;
+					}
+				}
+
+				p {
+					@include media('<=mobile-l') {
+						width: 100%;
+						text-align: center;
+					}
+				}
+			}
+
+			.top-row {
+				display: flex;
+				justify-content: flex-end;
+
+				.col {
+					width: 35%;
+					padding: 25px 45px;
+					display: flex;
+					align-items: center;
+
+					h3 {
+						font-size: 26px;
+						font-weight: 800;
+						color: $white;
+						margin: 0;
+
+						@include media('<=tablet-m') {
+							text-align: center;
+							width: 100%;
+						}
+
+						@include media('<=mobile-l') {
+							font-size: 12px;
+						}
+					}
+
+
+
+					@include media('<=tablet-m') {
+						padding: 15px;
+						width: 27.5%;
+					}
+
+					img {
+						width: 54px;
+						height: 54px;
+						margin-right: 15px;
+						border-radius: 50%;
+
+						@include media('<=tablet-m') {
+							width: 49px;
+							height: 49px;
+							margin-right: auto;
+							margin-left: auto;
+							display: block;
+						}
+					}
+
+
+					 &:first-child {
+					 	background-color: $bam-red;
+					 	border-top-left-radius: 20px;
+
+					 	img {
+					 		
+					 		@include media('<=tablet-m') {
+					 			max-width: 49px;
+					 		}
+					 	}
+					 }
+
+					  &:nth-child(2) {
+					  	background-color: $dark-blue;
+					  	border-top-right-radius: 20px;
+					  }
+				}
+			}
+
+			.bottom-row {
+				display: flex;
+				justify-content: flex-end;
+
+
+
+				.col {
+					width: 35%;
+					padding: 25px 45px;
+
+					@include media('<=tablet-m') {
+						width: 100%;
+						padding: 23px 25px;
+					}
+					
+
+					&:first-child {
+						border-left: 1px solid #BEBEBE;
+						border-right: 1px solid #BEBEBE;
+						border-bottom: 1px solid #BEBEBE;
+						border-bottom-right-radius: 20px;
+						border-bottom-left-radius: 20px;
+						background-color: #EDF3FA;
+					}
+
+					&:last-child {
+						border: none;
+
+						@include media('<=tablet-m') {
+							display: none;
+						}
+					}
+				}
+
+				.btn {
+					color: $white;
+					font-size: 20px;
+					padding: 20px 30px;
+					background-color: $bam-red;
+					border-radius: 10px;
+					border: 2px solid $bam-red;
+					width: 100%;
+					text-transform: capitalize;
+
+					&:hover {
+						background-color: $dark-blue;
+						border: 2px solid $dark-blue;
+					}
+				}
+			}
+
+			.rows-wrap {
+				border: 1px solid #BEBEBE;
+				border-top-left-radius: 20px;
+				border-bottom-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+
+				@include media('<=tablet-m') {
+					border-bottom-left-radius: 0;
+					border-bottom-right-radius: 0;
+				}
+			}
+
+			.row {
+				display: flex;
+
+				&:nth-child(odd) {
+					background-color: #EDF3FA;
+				}
+
+				&:first-child {
+					border-top-left-radius: 20px;
+				}
+
+				&:last-child {
+					
+					@include media('>tablet-m') {
+						border-bottom-left-radius: 20px;
+						border-bottom-right-radius: 20px;
+					}
+				}
+
+				.col {
+					width: 35%;
+					padding: 25px 45px;
+					position: relative;
+
+					@include media('<=tablet-m') {
+						padding: 23px 15px;
+						width: 27.5%;
+						min-height: 91px;
+						display: flex;
+						align-items: center;
+					}
+
+					&:not(:last-child) {
+						border-right: 1px solid #BEBEBE;
+					}
+
+					&:not(:first-child) {
+						@include media('<=tablet-m') {
+							text-align: center;
+							justify-content: center;
+						}
+					}
+
+
+
+					&:first-child {
+						width: 30%;
+
+						@include media('<=tablet-m') {
+							padding-right: 35px;
+							width: 45%;
+						}
+
+
+						p {
+							font-weight: bold;
+						}
+					}
+
+					&:last-child {
+						.check-wrap {
+							svg {
+								path {
+									fill: #BEBEBE;
+									stroke: #BEBEBE;
+								}
+							}
+						}
+					}
+
+					p {
+						font-size: 18px;
+						color: $dark-blue;
+
+						@include media('<=tablet-m') {
+							font-size: 12px;
+						}
+					}
+
+					.info-box {
+						position: absolute;
+						right: 25px;
+						top: 28px;
+		          		cursor: pointer;
+
+		          		@include media('<=tablet-m') {
+		          			top: 33px;
+		          			right: 15px;
+		          		}
+
+		          		svg {
+		          			width: 24px;
+		          			height: 24px;
+		          		}
+
+		          		&:hover {
+		          			.non-active {
+		          				display: none;
+		          			}
+
+		          			.active-icon {
+								display: block;
+							}
+
+							.info-copy {
+								display: block;
+							}
+		          		}
+
+		          		.active-icon {
+							display: none;
+						}
+
+						.info-copy {
+							width: 700px;
+							left: -160px;
+							top: 62px;
+							position: absolute;
+							display: none;
+
+							@include media('<=tablet-m') {
+								width: 300px;
+								left: -85px;
+							}
+
+
+							&:before {
+								content: '';
+							    position: absolute;
+							    width: 85px;
+							    height: 85px;
+							    background-color: $dark-blue;
+							    top: -13px;
+						        left: 129px;
+						        transform: rotate(45deg);
+
+						        @include media('<=tablet-m') {
+						        	left: 54px;
+						        }			
+							}
+
+							.inner-wrap {
+								background-color: $dark-blue;
+								padding: 45px 30px;
+								z-index: 15;
+								border-radius: 30px;
+								position: relative;
+
+								@include media('<=tablet') {
+									padding: 30px;
+								}
+							}
+
+							h3 {
+								font-size: 18px;
+								font-weight: bold;
+								color: $white;
+							}
+
+							p {
+								color: $white;
+								font-size: 16px;
+								line-height: 33px;
+
+								@include media('<=tablet-m') {
+									font-size: 12px;
+									line-height: 27px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
