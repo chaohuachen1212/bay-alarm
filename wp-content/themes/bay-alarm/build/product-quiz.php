@@ -4,11 +4,10 @@
   get_header();
 ?>
 
-  <div class="progress-steps">
+  <div class="progress--steps">
     <div class="progress-bar-bg">
       <div class="progress-bar-fill"><p>(Step <span class="number">1</span> of <span class="total-number">6</span>)</p></div>
     </div>
-    <button id="nextStep">Next</button>
   </div>
 
   <section class="product-quiz--main-content">
@@ -94,6 +93,7 @@
       </div>
     </div>
   </section>
+
 
 <?php
   include 'inc/bottom-get-started.php';
