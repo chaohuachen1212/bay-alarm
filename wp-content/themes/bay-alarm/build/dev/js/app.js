@@ -46,3 +46,4 @@ import './modules/accessibility';
 import './modules/senior-resource-guide';
 import './modules/senior-living';
 import './modules/about-team';
+import './modules/product-quiz';
