@@ -77,8 +77,14 @@
     <div class="container">
       <div class="row">
         <div class="images-wrap">
-          <img class="image" src="http://bay-alarm-cc.local/wp-content/uploads/Mask-group-8.webp" alt="image">
-          <img class="image" src="http://bay-alarm-cc.local/wp-content/uploads/Mask-group-8.webp" alt="image">
+          <?php
+            if( have_rows('product_quiz_form_images') ):
+            while( have_rows('product_quiz_form_images') ): the_row();
+          ?>
+          <img class="image" src="<?php the_sub_field('image'); ?>" alt="image">
+          <?php
+            endwhile; endif;
+          ?>
         </div>
 
         <div class="right-col">
