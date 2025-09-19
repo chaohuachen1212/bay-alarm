@@ -33,6 +33,8 @@
         if(currentStep === (totalSteps)) {
          
           $progressSteps.addClass('is-completed');
+          $('.product-quiz--main-content').addClass('is-completed');
+          $('.product-quiz--form-sec').addClass('is-completed');
         }
       }
     });
@@ -45,6 +47,8 @@
     $('.quiz-step .btn-back').click(function() {
       currentStep--;
       $progressSteps.removeClass('is-completed');
+      $('.product-quiz--main-content').removeClass('is-completed');
+      $('.product-quiz--form-sec').removeClass('is-completed');
       updateProgress();
     });
   }
