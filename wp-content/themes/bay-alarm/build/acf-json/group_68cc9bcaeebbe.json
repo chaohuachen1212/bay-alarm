@@ -91,6 +91,29 @@
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
+                            "key": "field_68ce02dd09baf",
+                            "label": "Turn on Skip Next Step?",
+                            "name": "turn_on_skip_next_step",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "parent_repeater": "field_68ccd15b8951e"
+                        },
+                        {
                             "key": "field_68ccd1888951f",
                             "label": "Text",
                             "name": "text",
@@ -304,5 +327,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1758253836
+    "modified": 1758331666
 }
