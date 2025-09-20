@@ -27,7 +27,7 @@
                   if( have_rows('buttons_text') ):
                   while( have_rows('buttons_text') ): the_row();
                 ?>
-                  <span class="btn"><?php the_sub_field('text'); ?></span>
+                  <span class="btn <?php if(get_sub_field('turn_on_skip_next_step')): echo 'skep-next-step'; endif; ?>"><?php the_sub_field('text'); ?></span>
                 <?php
                   endwhile; endif;
                 ?>
@@ -38,6 +38,11 @@
               </div>
 
               <span class="btn-back">
+                <?php include 'inc/vectors/arrow-left-circle-fill.svg'; ?>
+                Go Back
+              </span>
+
+              <span class="btn-skep-back">
                 <?php include 'inc/vectors/arrow-left-circle-fill.svg'; ?>
                 Go Back
               </span>

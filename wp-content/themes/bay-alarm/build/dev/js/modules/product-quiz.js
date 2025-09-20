@@ -54,6 +54,29 @@
   }
   goBackStepsProgress();
 
+  function buttonSkipNextStep(){
+    $('.skep-next-step').click(function(){
+      currentStep++;
+
+        updateProgress();
+        $('.quiz-step.is-active').addClass('next-of-skep-block');
+
+        $('.next-of-skep-block .btn-skep-back').click(function() {
+          currentStep = currentStep - 2;
+        if (currentStep < 1) {
+          currentStep = 1;
+        }
+        $progressSteps.removeClass('is-completed');
+        $('.product-quiz--main-content').removeClass('is-completed');
+        $('.product-quiz--form-sec').removeClass('is-completed');
+         updateProgress();
+      });
+      
+    });
+  }
+
+  buttonSkipNextStep();
+
   updateProgress();
 
 

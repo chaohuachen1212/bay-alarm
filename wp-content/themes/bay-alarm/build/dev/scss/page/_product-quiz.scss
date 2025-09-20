@@ -143,6 +143,16 @@
       display: flex;
     }
 
+    &.next-of-skep-block {
+      .btn-back {
+        display: none;
+      }
+
+      .btn-skep-back {
+        display: flex;
+      }
+    }
+
     &:first-child {
       .btn-back {
         display: none;
@@ -279,7 +289,9 @@
       }
     }
 
-    .btn-back {
+
+
+    .btn-back, .btn-skep-back {
       display: flex;
       align-items: center;
       padding: 15px 20px;
@@ -309,6 +321,10 @@
         height: 20px;
         margin-right: 15px;
       }
+    }
+
+    .btn-skep-back {
+      display: none;
     }
 
     
