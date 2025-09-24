@@ -79,5 +79,136 @@
 
   updateProgress();
 
+  function selectCorrectDisplay() {
+    var theItemsList = [];
+    var lastContentRows = $('.quiz-step .last-step--content .row');
+    $('.product-quiz--main-content .quiz-step .btn-wrap .btn').click(function() {
+        var item = $(this).attr('data-item');
+        theItemsList.push(item);
+        console.log(theItemsList);
+    });
+
+    $('.product-quiz--main-content .quiz-step-4').click(function(){
+      if(theItemsList.includes('at-home-only') && theItemsList.includes('yes') && theItemsList.includes('no---steady-on-their-feet') && theItemsList.includes('live-along-no') ) {
+        $('.quiz-step .last-step--content .in-home-cellular').addClass('is-active');
+      }
+
+      if(theItemsList.includes('at-home-only') && theItemsList.includes('yes') && theItemsList.includes('no---steady-on-their-feet') && theItemsList.includes('live-along-yes') ) {
+        $('.quiz-step .last-step--content .in-home-cellular-wall-buttons').addClass('is-active');
+      }
+
+      if(theItemsList.includes('at-home-only') && theItemsList.includes('yes') && theItemsList.includes('no---steady-on-their-feet') && theItemsList.includes('live-along-sometimes') ) {
+        $('.quiz-step .last-step--content .in-home-cellular-optional-wall-buttons').addClass('is-active');
+      }
+
+      if(theItemsList.includes('at-home-only') && theItemsList.includes('yes') && theItemsList.includes('yes---recent-fall-or-concern-about-falling') && theItemsList.includes('live-along-no') ) {
+        $('.quiz-step .last-step--content .in-home-cellular-fall-detection').addClass('is-active');
+      }
+
+      if(theItemsList.includes('at-home-only') && theItemsList.includes('yes') && theItemsList.includes('yes---recent-fall-or-concern-about-falling') && theItemsList.includes('live-along-yes') ) {
+        $('.quiz-step .last-step--content .in-home-cellular-fall-detection-wall-buttons').addClass('is-active');
+      }
+
+      if(theItemsList.includes('at-home-only') && theItemsList.includes('yes') && theItemsList.includes('yes---recent-fall-or-concern-about-falling') && theItemsList.includes('live-along-sometimes') ) {
+        $('.quiz-step .last-step--content .in-home-cellular-fd-optional-wall-buttons').addClass('is-active');
+      }
+
+      if(theItemsList.includes('at-home-only') && theItemsList.includes('yes') && theItemsList.includes('not-sure---may-want-optional-fall-detection') ) {
+        $('.quiz-step .last-step--content .in-home-cellular-optional-fall-detection').addClass('is-active');
+      }
+
+      if(theItemsList.includes('at-home-only') && theItemsList.includes('not-sure') && theItemsList.includes('yes---recent-fall-or-concern-about-falling') ) {
+        $('.quiz-step .last-step--content .in-home-cellular-fd-coverage-check').addClass('is-active');
+      }
+
+      if(theItemsList.includes('at-home-only') && theItemsList.includes('not-sure') && theItemsList.includes('no---steady-on-their-feet') ) {
+        $('.quiz-step .last-step--content .in-home-cellular-verify-coverage').addClass('is-active');
+      }
+
+      if(theItemsList.includes('at-home-only') && theItemsList.includes('no') ) {
+        $('.quiz-step .last-step--content .in-home-landline-fd-if-selected').addClass('is-active');
+      }
+
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('yes') && theItemsList.includes('yes---recent-fall-or-concern-about-falling') && theItemsList.includes('live-along-yes') ) {
+        $('.quiz-step .last-step--content .sos-all-in-one-2-fall-detection').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('yes') && theItemsList.includes('yes---recent-fall-or-concern-about-falling') && theItemsList.includes('live-along-no') ) {
+        $('.quiz-step .last-step--content .sos-all-in-one-2-fall-detection').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('yes') && theItemsList.includes('no---steady-on-their-feet') && theItemsList.includes('live-along-no') ) {
+        $('.quiz-step .last-step--content .sos-all-in-one-2').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('yes') && theItemsList.includes('no---steady-on-their-feet') && theItemsList.includes('live-along-yes') ) {
+        $('.quiz-step .last-step--content .sos-all-in-one-2-optional-fall-detection').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('yes') && theItemsList.includes('not-sure---may-want-optional-fall-detection') && theItemsList.includes('live-along-yes') ) {
+        $('.quiz-step .last-step--content .sos-all-in-one-2-optional-fall-detection').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('yes') && theItemsList.includes('not-sure---may-want-optional-fall-detection') && theItemsList.includes('live-along-no') ) {
+        $('.quiz-step .last-step--content .sos-all-in-one-2').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('not-sure') && theItemsList.includes('yes---recent-fall-or-concern-about-falling') ) {
+        $('.quiz-step .last-step--content .sos-all-in-one-2-fall-detection-verify-coverage').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('not-sure') && theItemsList.includes('no---steady-on-their-feet') ) {
+        $('.quiz-step .last-step--content .sos-all-in-one-2-verify-coverage').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('not-sure') && theItemsList.includes('not-sure---may-want-optional-fall-detection') ) {
+        $('.quiz-step .last-step--content .sos-all-in-one-2-optional-fall-detection-coverage-check').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('yes---recent-fall-or-concern-about-falling')  && theItemsList.includes('live-along-yes') ) {
+        $('.quiz-step .last-step--content .sos-micro-360-bundle').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
+      if(theItemsList.includes('mostly-out-and-away-from-the-home') && theItemsList.includes('yes---recent-fall-or-concern-about-falling')  && theItemsList.includes('live-along-yes') ) {
+        $('.quiz-step .last-step--content .sos-micro-360-bundle').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-micro-images');
+      }
+
+      if(theItemsList.includes('mostly-out-and-away-from-the-home') && theItemsList.includes('yes---recent-fall-or-concern-about-falling')  && theItemsList.includes('live-along-no') ) {
+        $('.quiz-step .last-step--content .sos-micro-fall-detection').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-micro-images');
+      }
+
+      if(theItemsList.includes('mostly-out-and-away-from-the-home') && theItemsList.includes('no---steady-on-their-feet')  && theItemsList.includes('live-along-yes') ) {
+        $('.quiz-step .last-step--content .sos-micro-360-bundle-in-home-cellular').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-micro-images');
+      }
+
+      if(theItemsList.includes('mostly-out-and-away-from-the-home') && theItemsList.includes('no---steady-on-their-feet')  && theItemsList.includes('live-along-no') ) {
+        $('.quiz-step .last-step--content .sos-micro').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-micro-images');
+      }
+
+      if(theItemsList.includes('mostly-out-and-away-from-the-home') && theItemsList.includes('not-sure---may-want-optional-fall-detection') ) {
+        $('.quiz-step .last-step--content .sos-micro-fall-detection-update').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-micro-images');
+      }
+    });
+
+
+  }
+
+  selectCorrectDisplay();
+
 
 }(jQuery));
