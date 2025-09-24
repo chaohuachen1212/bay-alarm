@@ -73,6 +73,12 @@
     font-size: 30px;
     font-weight: 800;
     line-height: 36px;
+
+    @include media('<=tablet') {
+      br {
+        display: none;
+      }
+    }
   }
 
   .btn-wrap {
@@ -187,7 +193,7 @@
     }
 
     .last-step--content {
-      width: 49%;
+      width: 100%;
       padding: 20px 0;
       display: none;
 
@@ -199,6 +205,48 @@
 
       .inner-wrap {
         max-width: 100%;
+      }
+
+      .row {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        display: none;
+
+        &.is-active {
+          display: flex;
+        }
+
+        @include media('<=1300px') {
+          flex-direction: column-reverse;
+        }
+
+        .article {
+          width: 49%;
+
+          @include media('<=1300px') {
+            width: 100%;
+            margin-top: 50px;
+          }
+        }
+
+        figure {
+          width: 49%;
+          position: relative;
+
+          @include media('<=1300px') {
+            width: 100%;
+          }
+
+          img {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 100%;
+          }
+
+        }
+
       }
 
       .subhead {
@@ -272,6 +320,7 @@
           border-radius: 80px;
           display: inline-block;
           margin-right: 7px;
+          color: $dark-blue;
 
           &:nth-child(2) {
             background-color: $dark-blue;
@@ -463,6 +512,31 @@
     img {
       margin-bottom: 15px;
       display: block;
+    }
+
+    .all-in-one-images {
+      display: none;
+    }
+
+    &.sos-micro-images {
+      .default-images {
+        display: none;
+      }
+
+      .micro-images {
+        display: block;
+      }
+    }
+
+
+    &.sos-all-in-one {
+      .default-images {
+        display: none;
+      }
+
+      .all-in-one-images {
+        display: block;
+      }
     }
   }
 
