@@ -128,6 +128,11 @@
         $('.quiz-step .last-step--content .in-home-landline-fd-if-selected').addClass('is-active');
       }
 
+      if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('no') ) {
+        $('.quiz-step .last-step--content .sos-all-in-one-2-fall-detection').addClass('is-active');
+        $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
+      }
+
       if(theItemsList.includes('both-at-home-and-on-the-go') && theItemsList.includes('yes') && theItemsList.includes('yes---recent-fall-or-concern-about-falling') && theItemsList.includes('live-along-yes') ) {
         $('.quiz-step .last-step--content .sos-all-in-one-2-fall-detection').addClass('is-active');
         $('.product-quiz--form-sec .images-wrap').addClass('sos-all-in-one');
