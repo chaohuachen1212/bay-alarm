@@ -85,7 +85,6 @@
     $('.product-quiz--main-content .quiz-step .btn-wrap .btn').click(function() {
         var item = $(this).attr('data-item');
         theItemsList.push(item);
-        console.log(theItemsList);
     });
 
     $('.product-quiz--main-content .quiz-step-4').click(function(){
