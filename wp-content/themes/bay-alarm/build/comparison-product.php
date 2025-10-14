@@ -60,8 +60,7 @@
               <h3 class="desktop"><?php the_sub_field('bam_icon_title'); ?></h3>
             </div>
             <div class="col">
-              <h3 class="desktop"><?php the_sub_field('other_icon_title'); ?></h3>
-              <h3 class="mobile">Life Alert</h3>
+              <h3><?php the_sub_field('other_icon_title'); ?></h3>
             </div>
           </div>
           <div class="rows-wrap">
@@ -163,22 +162,27 @@
 <section class="comparison-main--brand">
   <div class="container">
     <div class="content-nav-wrap">
-      <h2><?php the_field('brand_title'); ?></h2>
-      <div class="nav-wrap">
-        <?php 
-        if( have_rows('brand_buttons') ):
-        while( have_rows('brand_buttons') ): the_row();
-        $link = get_sub_field('link');
+      <?php
+        $use_lander_content = get_field('use_compare_lander_data');
 
-        if( $link ): 
-          $link_url = $link['url'];
-          $link_title = $link['title'];
-          $link_target = $link['target'] ? $link['target'] : '_self';
-        ?>
-          <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-        <?php
-          endif; endwhile; endif;
-        ?>
+        if ($use_lander_content) {
+          $compare_lander_page = get_field('compare_page');
+          $brand_heading = get_field('brand_title', $compare_lander_page);
+          $brand_nav_links = get_field('brand_buttons', $compare_lander_page);
+        } else {
+          $brand_heading = get_field('brand_title');
+          $brand_nav_links = get_field('brand_buttons');
+        }
+      ?>
+      <h2><?php echo esc_html($brand_heading); ?></h2>
+      <div class="nav-wrap">
+        <?php if (!empty($brand_nav_links)): ?>
+          <?php foreach ($brand_nav_links as $brand_link): ?>
+            <?php if (isset($brand_link['link']['url'])): ?>
+              <a href="<?php echo esc_url($brand_link['link']['url']); ?>"><?php echo esc_html($brand_link['link']['title']); ?></a>
+            <?php endif; ?>
+          <?php endforeach; ?>
+        <?php endif; ?>
       </div>
     </div>
   </div>
